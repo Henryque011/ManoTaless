@@ -1,2 +1,2 @@
-# ManoTalles
-mano talles barber
+# ManoTaless
+Portífolio Mano Taless
