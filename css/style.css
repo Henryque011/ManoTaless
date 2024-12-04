@@ -1,0 +1,28 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.site {
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.topo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    div:nth-child(1) img{
+        width: 150px;
+        height: 60px;
+    }
+
+    nav ul{
+        display: flex;
+        li {
+            padding: 20px;
+        }
+    }
+}
