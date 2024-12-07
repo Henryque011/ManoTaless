@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Bokor&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Oswald:wght@200..700&display=swap');
+/*  font-family: "Arvo" */
+
 * {
     padding: 0;
     margin: 0;
@@ -9,20 +12,54 @@
     width: 100%;
 }
 
-.topo{
+:root {
+    --font_arvo: "Arvo";
+    --strong_purple:#570C82 ;
+    --gold_color: #D7A001;
+}
+
+header .abrirMenu,
+header .fecharMenu { 
+    display: none;  
+}
+
+.topo {
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    div:nth-child(1) img{
+    div:nth-child(1) img {
         width: 150px;
         height: 60px;
     }
 
-    nav ul{
+    nav ul {
         display: flex;
+
         li {
             padding: 20px;
+
+            .active {
+                color: var(--gold_color);
+            }
+
+            a {
+                font-family: var(--font_arvo);
+                align-items: center;
+                text-align: center;
+                font-size: 14pt;
+                text-decoration: none;
+                text-transform: uppercase;
+                color: black;
+                font-weight: 700;
+            }
         }
+    }
+
+    .menu {
+        font-size: 24pt;
+        align-items: center;
+        text-align: center;
+        margin: 0 10px;
     }
 }
