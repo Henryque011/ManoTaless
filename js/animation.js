@@ -1,10 +1,15 @@
+// document.addEventListener("DOMContentLoaded", () => {
+//     const menuToggle = document.getElementById("menu-toggle");
+//     const menuClose = document.getElementById("menu-close");
+//     const menuLateral = document.getElementById("menu-lateral");
 
-// Seleciona o botão do menu e a navegação
-const menuButton = document.querySelector('.menu');
-const navMenu = document.querySelector('nav');
+//     // Abrir o menu
+//     menuToggle.addEventListener("click", () => {
+//         menuLateral.classList.add("active");
+//     });
 
-// Adiciona um evento de clique ao botão
-menuButton.addEventListener('click', () => {
-    navMenu.classList.toggle('active'); // Alterna a classe 'active'
-});
-
+//     // Fechar o menu
+//     menuClose.addEventListener("click", () => {
+//         menuLateral.classList.remove("active");
+//     });
+// });
