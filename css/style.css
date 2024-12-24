@@ -14,13 +14,9 @@
 
 :root {
     --font_arvo: "Arvo";
-    --strong_purple:#570C82 ;
+    --strong_purple: #570C82;
     --gold_color: #D7A001;
-}
-
-header .abrirMenu,
-header .fecharMenu { 
-    display: none;  
+    --space: 20px;
 }
 
 .topo {
@@ -64,3 +60,11 @@ header .fecharMenu {
     }
 }
 
+.space {
+    padding: var(--space);
+}
+
+.side {
+    display: flex;
+    justify-content: space-between;
+}
