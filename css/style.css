@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Bokor&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Oswald:wght@200..700&display=swap');
 /*  font-family: "Arvo" */
 
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Bokor&family=Goldman:wght@400;700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Oswald:wght@200..700&display=swap');
+/* font-family: "Goldman", serif; */
+
 * {
     padding: 0;
     margin: 0;
@@ -14,6 +17,7 @@
 
 :root {
     --font_arvo: "Arvo";
+    --font_goldman: "Goldman";
     --strong_purple: #570C82;
     --gold_color: #D7A001;
     --space: 20px;
@@ -66,5 +70,27 @@
 
 .side {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    margin: 20px;
+
+    .sobre {
+        align-items: center;
+        text-align: center;
+
+        h2 {
+            align-items: center;
+            text-align: center;
+            text-transform: uppercase;
+            font-family: var(--font_goldman);
+        }
+    }
+
+    .sobre_img {
+        img {
+            border-radius: 20px;
+            width: 400px;
+            height: 540px;
+        }
+    }
+
 }
