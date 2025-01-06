@@ -4,6 +4,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Bokor&family=Goldman:wght@400;700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Oswald:wght@200..700&display=swap');
 /* font-family: "Goldman", serif; */
 
+@import url('https://fonts.googleapis.com/css2?family=Nosifer&display=swap');
+/* font-family: "Nosifer", serif; */
+
 * {
     padding: 0;
     margin: 0;
@@ -21,6 +24,7 @@
     --strong_purple: #570C82;
     --gold_color: #D7A001;
     --space: 20px;
+    --font_nosifer: "Nosifer";
 }
 
 .topo {
@@ -82,6 +86,13 @@
             text-align: center;
             text-transform: uppercase;
             font-family: var(--font_goldman);
+            font-size: 16pt;
+            margin: 10px;
+        }
+
+        .sobre_carrosel {
+            font-family: var(--font_goldman);
+            color: var(--gold_color);
         }
     }
 
@@ -92,5 +103,7 @@
             height: 540px;
         }
     }
+
+
 
 }
