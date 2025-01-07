@@ -110,6 +110,7 @@
         .sobre_txt {
             width: 700px;
             display: flex;
+
             p {
                 height: 200px;
                 padding: 50px;
@@ -119,7 +120,7 @@
                 word-spacing: 2pt;
                 font-family: var(--font_poppins);
             }
-        
+
         }
     }
 
@@ -131,4 +132,15 @@
         }
     }
 
+}
+
+.carousel_sobre {
+
+    h2 {
+        text-transform: uppercase;
+        font-family: var(--font_goldman);
+        align-items: center;
+        text-align: center;
+        font-size: 16pt;
+    }
 }
