@@ -82,10 +82,12 @@
     margin: 20px;
     align-items: center;
     text-align: center;
+    height: 400px;
 
     .sobre {
         align-items: center;
         text-align: center;
+        height: 400px;
 
         h2 {
             align-items: center;
@@ -107,10 +109,10 @@
 
         .sobre_txt {
             width: 700px;
-
+            display: flex;
             p {
-                height: 400px;
-                padding: 25px;
+                height: 200px;
+                padding: 50px;
                 font-size: 12pt;
                 text-align: center;
                 align-items: center;
