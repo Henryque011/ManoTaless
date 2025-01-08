@@ -1,9 +1,8 @@
 // carrossel de trabalhos
-
 $(document).ready(function () {
-    $('.exe_trabalho').slick({
+    $('.box_carousel').slick({
         infinite: true,
-        slidesToShow: 3,
-        slidesToScroll: 3
+        slidesToShow: 2,
+        slidesToScroll: 2
     });
 });
