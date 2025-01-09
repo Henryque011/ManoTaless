@@ -25,6 +25,7 @@
     --font_arvo: "Arvo";
     --font_goldman: "Goldman";
     --strong_purple: #570C82;
+    --medium_purple: #7d1ecc;
     --gold_color: #D7A001;
     --space: 20px;
     --font_nosifer: "Nosifer";
@@ -48,7 +49,7 @@
             padding: 20px;
 
             .active {
-                color: var(--gold_color);
+                color:var(--medium_purple);
             }
 
             a {
@@ -99,7 +100,7 @@
         }
 
         .sobre_carrosel {
-            color: var(--gold_color);
+            color: var(--medium_purple);
 
             h2 {
                 font-family: var(--font_nosifer);
