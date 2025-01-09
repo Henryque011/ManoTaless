@@ -2,7 +2,8 @@
 $(document).ready(function () {
     $('.box_carousel').slick({
         infinite: true,
-        slidesToShow: 2,
-        slidesToScroll: 2
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        autoplay: true
     });
 });
