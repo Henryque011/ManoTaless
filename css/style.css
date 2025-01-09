@@ -167,7 +167,8 @@
                 align-items: center;
                 text-align: center;
                 display: flex;
-                justify-content: center
+                justify-content: center;
+                flex-direction: column;
             }
 
             img {
