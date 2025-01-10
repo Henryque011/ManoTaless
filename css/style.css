@@ -27,9 +27,14 @@
     --strong_purple: #570C82;
     --medium_purple: #7d1ecc;
     --gold_color: #D7A001;
+    --body-color: #cdd7ce6e;
     --space: 20px;
     --font_nosifer: "Nosifer";
     --font_poppins: "Poppins";
+}
+
+body {
+    background-color: var(--body-color);
 }
 
 .topo {
@@ -49,11 +54,11 @@
             padding: 20px;
 
             .active {
-                color:var(--medium_purple);
+                color: var(--medium_purple);
             }
 
             a {
-                font-family: var(--font_arvo);
+                font-family: var(--font_poppins);
                 align-items: center;
                 text-align: center;
                 font-size: 14pt;
@@ -70,6 +75,7 @@
         align-items: center;
         text-align: center;
         margin: 0 10px;
+        cursor: pointer;
     }
 }
 
@@ -114,7 +120,7 @@
 
             p {
                 height: 200px;
-                padding: 50px;
+                padding: 30px;
                 font-size: 12pt;
                 text-align: center;
                 align-items: center;
@@ -143,7 +149,7 @@
         align-items: center;
         text-align: center;
         font-size: 16pt;
-        margin: 10px 0;
+        margin: 15px 0;
     }
 
     .box_carousel {
@@ -154,16 +160,18 @@
         text-align: center;
 
         div {
+            display: flex;
+            justify-content: center;
             align-items: center;
             text-align: center;
 
             h2 {
                 color: white;
-                background-color: var(--strong_purple);
+                background-color: var(--medium_purple);
                 font-family: var(--font_poppins);
                 font-weight: bold;
                 border-radius: 5px;
-                width: 225px;
+                width: 100%;
                 height: 35px;
                 align-items: center;
                 text-align: center;
@@ -173,11 +181,27 @@
             }
 
             img {
-                width: 300px;
+                width: 310px;
+                height: 370px;
                 border-radius: 20px;
-                margin: 10px;
+                margin: 15px;
                 padding: 10px;
             }
         }
     }
+}
+
+.slick-next:before,
+.slick-prev:before {
+    color: var(--medium_purple);
+    font-size: 26pt;
+}
+
+.slick-dots li button:before {
+    color: var(--strong_purple);
+    font-size: 14pt;
+}
+
+.slick-dots li.slick-active button:before {
+    color: var(--medium_purple);
 }
