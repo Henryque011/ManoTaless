@@ -249,6 +249,9 @@ body {
 
     .site {
         .side {
+            display: flex;
+            justify-content: space-between;
+
             div:nth-child(1) {
                 align-items: center;
                 text-align: center;
@@ -302,6 +305,10 @@ body {
                     text-transform: uppercase;
                     font-weight: bold;
                 }
+            }
+
+            .box_video {
+                
             }
         }
     }
