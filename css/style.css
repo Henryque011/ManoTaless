@@ -252,7 +252,7 @@ body {
             div:nth-child(1) {
                 align-items: center;
                 text-align: center;
-                
+
             }
 
             h2 {
@@ -279,6 +279,12 @@ body {
             .redes_sociais {
                 display: flex;
                 justify-content: space-around;
+
+                a {
+                    font-size: 31pt;
+                    text-decoration: none;
+                    color: var(--medium_purple);
+                }
             }
         }
     }
