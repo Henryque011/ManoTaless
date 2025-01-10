@@ -286,8 +286,23 @@ body {
                     color: var(--medium_purple);
                 }
             }
+
+            button {
+                width: 300px;
+                height: 70px;
+                border: none;
+                border-radius: 20px;
+                background-color: var(--medium_purple);
+
+                a {
+                    text-decoration: none;
+                    font-size: 16pt;
+                    color: white;
+                    font-family: var(--font_poppins);
+                    text-transform: uppercase;
+                    font-weight: bold;
+                }
+            }
         }
     }
-
-
 }
