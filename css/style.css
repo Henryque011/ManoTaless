@@ -233,3 +233,55 @@ body {
 .slick-dots li.slick-active button:before {
     color: var(--medium_purple);
 }
+
+.videos_sobre {
+
+    .banner {
+        background-image: url(../img/purpleground.jpg);
+        background-position: bottom bottom;
+        background-size: cover;
+        background-attachment: fixed;
+        filter: brightness(75%);
+        box-shadow: inset 10px 10px 10px 10px black;
+        padding: 50px 0;
+        height: 350px;
+    }
+
+    .site {
+        .side {
+            div:nth-child(1) {
+                align-items: center;
+                text-align: center;
+                
+            }
+
+            h2 {
+                /* width: 270px; */
+                align-items: center;
+                text-align: center;
+                text-transform: uppercase;
+                font-family: var(--font_goldman);
+                font-size: 16pt;
+                margin: 10px;
+            }
+
+            h3 {
+                align-items: center;
+                text-align: center;
+                text-transform: uppercase;
+                font-family: var(--font_poppins);
+                font-size: 16pt;
+                margin: 15px;
+                font-weight: 600px;
+                padding: 50px;
+            }
+
+            .redes_sociais {
+                display: flex;
+                justify-content: space-around;
+            }
+        }
+    }
+
+
+}
