@@ -367,3 +367,18 @@ body {
         }
     }
 }
+
+.footer {
+
+}
+
+.upper {
+    
+    button {
+        font-size: larger;
+
+        fa-solid {
+            font-size: larger;
+        }
+    }
+}
