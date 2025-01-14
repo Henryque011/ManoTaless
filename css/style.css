@@ -26,6 +26,7 @@
     --font_goldman: "Goldman";
     --strong_purple: #570C82;
     --medium_purple: #7d1ecc;
+    --dark_purple: #1F1D2C;
     --gold_color: #D7A001;
     --body-color: #cdd7ce6e;
     --space: 30px;
@@ -369,16 +370,55 @@ body {
 }
 
 .footer {
+    background-color: var(--strong_purple);
 
+    .side {
+        div {
+            display: flex;
+            flex-direction: column;
+            margin: 20px;
+
+            img {
+                width: 150px;
+                height: 70px;
+            }
+
+            a {
+                text-decoration: none;
+                font-size: 18pt;
+                font-family: var(--font_poppins);
+                color: black;
+                font-weight: 500;
+
+                .fa-phone {
+                    margin: 10px;
+                    height: 20px;
+                    /* display: flex; */
+                    align-items: center;
+                    text-align: center;
+                }
+            }
+        }
+    }
 }
 
 .upper {
-    
-    button {
-        font-size: larger;
+    display: flex;
+    justify-content: end;
 
-        fa-solid {
-            font-size: larger;
+    button {
+        margin: 20px;
+        border-radius: 50%;
+        border: none;
+        width: 80px;
+        height: 80px;
+        cursor: pointer;
+        background-color: var(--body-color);
+
+        .fa-up-long {
+            font-size: 31pt;
+            color: var(--medium_purple);
         }
+
     }
 }
