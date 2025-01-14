@@ -391,8 +391,16 @@ body {
 
 .footer {
     background-color: var(--dark_purple);
+    height: 400px;
+    align-items: center;
+    text-align: center;
 
     .side {
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        height: 350px;
+
         div {
             display: flex;
             flex-direction: column;
@@ -400,7 +408,7 @@ body {
 
             img {
                 width: 200px;
-                height: 90px;
+                height: 100px;
             }
 
             a {
@@ -418,6 +426,11 @@ body {
                     align-items: center;
                     text-align: center;
                 }
+
+                .fa-location-dot {
+                    margin: 10px;
+                    color: white;
+                }
             }
 
             h3 {
@@ -428,7 +441,23 @@ body {
                 text-transform: uppercase;
                 margin: 10px;
             }
+
+            .redes_sociais {
+                display: block;
+                justify-content: space-around;
+
+                a {
+                    font-size: 31pt;
+                    text-decoration: none;
+                    color: white;
+                }
+            }
         }
     }
+    hr {
+        border: none;
+        color: white;
+        height: 40px;
+        margin: 0px;
+    }
 }
-
