@@ -26,7 +26,7 @@
     --font_goldman: "Goldman";
     --strong_purple: #570C82;
     --medium_purple: #7d1ecc;
-    --dark_purple: #1F1D2C;
+    --dark_purple: #2f2c47;
     --gold_color: #D7A001;
     --body-color: #cdd7ce6e;
     --space: 30px;
@@ -369,39 +369,6 @@ body {
     }
 }
 
-.footer {
-    background-color: var(--strong_purple);
-
-    .side {
-        div {
-            display: flex;
-            flex-direction: column;
-            margin: 20px;
-
-            img {
-                width: 150px;
-                height: 70px;
-            }
-
-            a {
-                text-decoration: none;
-                font-size: 18pt;
-                font-family: var(--font_poppins);
-                color: black;
-                font-weight: 500;
-
-                .fa-phone {
-                    margin: 10px;
-                    height: 20px;
-                    /* display: flex; */
-                    align-items: center;
-                    text-align: center;
-                }
-            }
-        }
-    }
-}
-
 .upper {
     display: flex;
     justify-content: end;
@@ -419,6 +386,49 @@ body {
             font-size: 31pt;
             color: var(--medium_purple);
         }
-
     }
 }
+
+.footer {
+    background-color: var(--dark_purple);
+
+    .side {
+        div {
+            display: flex;
+            flex-direction: column;
+            margin: 20px;
+
+            img {
+                width: 200px;
+                height: 90px;
+            }
+
+            a {
+                text-transform: uppercase;
+                text-decoration: none;
+                font-size: 18pt;
+                font-family: var(--font_poppins);
+                color: white;
+                font-weight: 500;
+                margin: 10px;
+
+                .fa-phone {
+                    margin: 10px;
+                    height: 20px;
+                    align-items: center;
+                    text-align: center;
+                }
+            }
+
+            h3 {
+                font-size: 18pt;
+                font-family: var(--font_poppins);
+                color: white;
+                font-weight: 500;
+                text-transform: uppercase;
+                margin: 10px;
+            }
+        }
+    }
+}
+
