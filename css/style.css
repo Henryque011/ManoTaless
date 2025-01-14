@@ -391,9 +391,19 @@ body {
 
 .footer {
     background-color: var(--dark_purple);
-    height: 400px;
+    height: 450px;
     align-items: center;
     text-align: center;
+
+    .site {
+        hr {
+            border: none;
+            color: rgb(255, 6, 6);
+            height: 5px;
+            /* margin: 0px; */
+            z-index: -99999px;
+        }
+    }
 
     .side {
         justify-content: space-between;
@@ -454,10 +464,6 @@ body {
             }
         }
     }
-    hr {
-        border: none;
-        color: white;
-        height: 40px;
-        margin: 0px;
-    }
+
+
 }
