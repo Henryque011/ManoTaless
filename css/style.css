@@ -106,10 +106,11 @@ body {
                     color: white;
                     text-decoration: none;
                     font-size: 18px;
+                    font-family: var(--font_poppins);
                     display: block;
 
                     :hover {
-                        background-color: #575757;
+                        background-color: var(--space);
                     }
                 }
             }
@@ -118,7 +119,7 @@ body {
 
     .menu-lateral.ativo {
         right: 0;
-        /* Move para dentro da tela */
+        background-color: var(--dark_purple);
     }
 
     .body-ativo {
