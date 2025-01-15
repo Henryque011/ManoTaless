@@ -37,28 +37,6 @@
 body {
     background-color: var(--body-color);
 }
-/* 
-header .abrirMenu,
-header .fecharMenu { 
-    display: block;  
-}
-
-.menuAtivo header nav{
-    right: 0;
-}
-
-header nav button:first-child{
-    margin-right: auto;
-}
-header nav ul {
-    /* flex-direction: column; */
-}
-header nav ul li a {
-    color: #cfcfcf;
-}
-header button {
-    color: #cfcfcf;
-} */
 
 .topo {
     display: flex;
@@ -162,7 +140,6 @@ header button {
             height: 420px;
         }
     }
-
 }
 
 .carousel_sobre {
