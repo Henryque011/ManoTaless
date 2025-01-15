@@ -112,6 +112,19 @@ body {
                     :hover {
                         background-color: var(--space);
                     }
+
+                    button {
+
+                        .fa-arrow-left {
+                            color: red;
+                        }
+
+                        .bnt-sair {
+                            color: red;
+                        }
+
+                    }
+
                 }
             }
         }
