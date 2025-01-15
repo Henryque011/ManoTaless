@@ -1,5 +1,3 @@
-
-
 // carrossel de trabalhos
 $(document).ready(function () {
     $('.box_carousel').slick({
@@ -46,8 +44,11 @@ btnScrollTop.addEventListener("click", () => {
 const menuToggle = document.getElementById('menu-toggle');
 const menuLateral = document.getElementById('menu-lateral');
 const body = document.querySelector('body');
+const btnSair = document.querySelector('.btn-sair');  
 
 menuToggle.addEventListener('click', () => {
     menuLateral.classList.toggle('ativo');
     body.classList.toggle('body-ativo');
 });
+
+
