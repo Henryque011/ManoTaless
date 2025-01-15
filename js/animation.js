@@ -42,10 +42,12 @@ btnScrollTop.addEventListener("click", () => {
     });
 });
 
-// // menu 
-// document.querySelector(".abrirMenu").onclick = function () {
-//     document.documentElement.classList.add("menuAtivo");
-// }
-// document.querySelector(".fecharMenu").onclick = function() {
-//     document.documentElement.classList.remove("menuAtivo");
-// }
+// Menu
+const menuToggle = document.getElementById('menu-toggle');
+const menuLateral = document.getElementById('menu-lateral');
+const body = document.querySelector('body');
+
+menuToggle.addEventListener('click', () => {
+    menuLateral.classList.toggle('ativo');
+    body.classList.toggle('body-ativo');
+});
