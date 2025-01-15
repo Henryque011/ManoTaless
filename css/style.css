@@ -391,7 +391,7 @@ body {
 
 .footer {
     background-color: var(--dark_purple);
-    height: 450px;
+    height: 430px;
     align-items: center;
     text-align: center;
 
@@ -459,5 +459,22 @@ body {
         border: none;
         background-color: rgb(255, 255, 255);
         height: 5px;
+    }
+
+    p {
+        font-size: 21pt;
+        color: white;
+        align-items: center;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: var(--font_poppins);
+
+        a {
+            font-size: 21pt;
+            text-decoration: none;
+            color: var(--medium_purple);
+            border-color: white;
+            font-weight: bold;
+        }
     }
 }
