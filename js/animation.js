@@ -51,4 +51,10 @@ menuToggle.addEventListener('click', () => {
     body.classList.toggle('body-ativo');
 });
 
+btnSair.addEventListener('click', () => {
+    menuLateral.classList.remove('ativo');  
+    body.classList.remove('body-ativo');  
+});
+
+
 
