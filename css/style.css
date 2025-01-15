@@ -462,7 +462,7 @@ body {
     }
 
     p {
-        font-size: 21pt;
+        font-size: 18pt;
         color: white;
         align-items: center;
         text-align: center;
@@ -470,7 +470,7 @@ body {
         font-family: var(--font_poppins);
 
         a {
-            font-size: 21pt;
+            font-size: 18pt;
             text-decoration: none;
             color: var(--medium_purple);
             border-color: white;
