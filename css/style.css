@@ -116,8 +116,31 @@ body {
                 }
 
                 img {
-                    width: 150px;
+                    width: 190px;
                     height: 80px;
+                }
+
+                p {
+                    display: flex;
+                    text-transform: uppercase;
+                    font-family: var(--font_poppins);
+                    align-items: center;
+                    text-align: center;
+                    font-size: 16pt;
+                    margin: 15px 0;
+                    color: white;
+                }
+
+                .redes_sociais {
+                    width: 150px;
+                    display: flex;
+                    justify-content: space-around;
+
+                    a {
+                        font-size: 31pt;
+                        text-decoration: none;
+                        color: var(--medium_purple);
+                    }
                 }
             }
         }
@@ -147,7 +170,6 @@ body {
                 text-align: center;
             }
         }
-
 
     }
 
