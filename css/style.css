@@ -37,15 +37,38 @@
 body {
     background-color: var(--body-color);
 }
+/* 
+header .abrirMenu,
+header .fecharMenu { 
+    display: block;  
+}
+
+.menuAtivo header nav{
+    right: 0;
+}
+
+header nav button:first-child{
+    margin-right: auto;
+}
+header nav ul {
+    /* flex-direction: column; */
+}
+header nav ul li a {
+    color: #cfcfcf;
+}
+header button {
+    color: #cfcfcf;
+} */
 
 .topo {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 95px;
 
     div:nth-child(1) img {
         width: 150px;
-        height: 60px;
+        height: 80px;
     }
 
     nav ul {
@@ -63,7 +86,7 @@ body {
                 font-family: var(--font_poppins);
                 align-items: center;
                 text-align: center;
-                font-size: 14pt;
+                font-size: 16pt;
                 text-decoration: none;
                 text-transform: uppercase;
                 color: black;
@@ -73,7 +96,7 @@ body {
     }
 
     .menu {
-        font-size: 24pt;
+        font-size: 26pt;
         align-items: center;
         text-align: center;
         margin: 0 10px;
@@ -390,7 +413,9 @@ body {
 }
 
 .footer {
-    background-color: var(--dark_purple);
+    /* background-color: var(--dark_purple); */
+    background-image: url(../img/purpleground.jpg);
+    filter: blur(100%);
     height: 430px;
     align-items: center;
     text-align: center;
