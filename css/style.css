@@ -38,6 +38,33 @@ body {
     background-color: var(--body-color);
 }
 
+/* Estilos do menu lateral */
+
+
+
+
+
+
+
+
+
+
+/* Estilos do ícone de hambúrguer */
+/* .menu {
+    font-size: 30px;
+    cursor: pointer;
+} */
+
+/* .menu i {
+    color: #333;
+} */
+
+/* Ajuste do menu lateral quando ativo */
+
+
+/* Estilo do body quando o menu está aberto */
+
+
 .topo {
     display: flex;
     justify-content: space-between;
@@ -79,6 +106,50 @@ body {
         text-align: center;
         margin: 0 10px;
         cursor: pointer;
+    }
+
+    .menu-lateral {
+        position: fixed;
+        top: 0;
+        left: -250px;
+        /* Inicia fora da tela */
+        width: 250px;
+        height: 100%;
+        background-color: #333;
+        transition: 0.3s;
+        /* Transição suave para abrir/fechar */
+        padding-top: 60px;
+        z-index: 1000;
+
+        ul {
+            list-style: none;
+            padding: 0;
+
+            li {
+                padding: 15px;
+                text-align: center;
+
+                a {
+                    color: white;
+                    text-decoration: none;
+                    font-size: 18px;
+                    display: block;
+
+                    :hover {
+                        background-color: #575757;
+                    }
+                }
+            }
+        }
+    }
+
+    .menu-lateral.ativo {
+        left: 0;
+        /* Move para dentro da tela */
+    }
+
+    .body-ativo {
+        /* overflow: hidden; */
     }
 }
 
