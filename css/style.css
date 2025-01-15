@@ -84,9 +84,9 @@ body {
     .menu-lateral {
         position: fixed;
         top: 0;
-        right: -300px;
+        right: -500px;
         /* Inicia fora da tela */
-        width: 300px;
+        width: 500px;
         height: 100%;
         background-color: #333;
         transition: 0.8s;
@@ -112,21 +112,20 @@ body {
                     :hover {
                         background-color: var(--space);
                     }
+                }
 
-                    button {
+                button {
 
-                        .fa-arrow-left {
-                            color: red;
-                        }
-
-                        .bnt-sair {
-                            color: red;
-                        }
-
+                    .fa-arrow-left {
+                        color: red;
                     }
 
+                    .bnt-sair {
+                        color: red;
+                    }
                 }
             }
+
         }
     }
 
