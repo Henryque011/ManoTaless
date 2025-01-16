@@ -47,6 +47,8 @@ body {
     div:nth-child(1) img {
         width: 150px;
         height: 80px;
+        filter: drop-shadow(0 0 1rem purple);
+
     }
 
     nav ul {
@@ -85,12 +87,10 @@ body {
         position: fixed;
         top: 0;
         right: -500px;
-        /* Inicia fora da tela */
         width: 500px;
         height: 100%;
         background-color: #333;
         transition: 0.8s;
-        /* Transição suave para abrir/fechar */
         padding-top: 20px;
         z-index: 1000;
 
@@ -99,14 +99,14 @@ body {
             padding: 0;
 
             li {
-                padding: 15px;
+                padding: 15px 10px;
                 text-align: center;
                 text-align: center;
 
                 a {
                     color: white;
                     text-decoration: none;
-                    font-size: 18px;
+                    font-size: 24px;
                     font-family: var(--font_poppins);
                     display: block;
 
@@ -118,6 +118,8 @@ body {
                 img {
                     width: 190px;
                     height: 80px;
+                    filter: drop-shadow(0 0 2rem red);
+                    /* box-shadow: 1px 1px 1rem darkorange; */
                 }
 
                 p {
@@ -126,9 +128,10 @@ body {
                     font-family: var(--font_poppins);
                     align-items: center;
                     text-align: center;
-                    font-size: 16pt;
+                    font-size: 18pt;
                     margin: 15px 0;
                     color: white;
+                    font-weight: 500;
                 }
 
                 .redes_sociais {
@@ -139,8 +142,20 @@ body {
                     a {
                         font-size: 31pt;
                         text-decoration: none;
-                        color: var(--medium_purple);
+                        color: white;
                     }
+                }
+
+                .fa-phone {
+                    margin: 10px;
+                    height: 20px;
+                    align-items: center;
+                    text-align: center;
+                }
+
+                .fa-location-dot {
+                    margin: 10px;
+                    color: white;
                 }
             }
         }
@@ -170,7 +185,6 @@ body {
                 text-align: center;
             }
         }
-
     }
 
     .menu-lateral.ativo {
@@ -491,7 +505,6 @@ body {
 }
 
 .footer {
-    /* background-color: var(--dark_purple); */
     background-image: url(../img/purpleground.jpg);
     filter: blur(100%);
     height: 430px;
