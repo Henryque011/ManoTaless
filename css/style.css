@@ -601,7 +601,6 @@ body {
 
 
 .modelo {
-
     h2 {
         align-items: center;
         text-align: center;
@@ -622,7 +621,8 @@ body {
     }
 
     .side {
-        height: 500px;
+        height: 615px;
+        justify-content: space-between;
 
         .modelo_carac {
             ul {
@@ -641,12 +641,29 @@ body {
         }
 
         img {
-            width: 500px;
-            height: 400px;
+            width: 440px;
+            border-radius: 20px;
         }
+    }
+}
 
+.cabelos {
+    h2 {
+        align-items: center;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: var(--font_goldman);
+        font-size: 18pt;
+        margin: 20px;
+        padding: 5px;
     }
 
-
-
+    h3 {
+        display: flex;
+        justify-content: center;
+        color: var(--medium_purple);
+        font-family: var(--font_nosifer);
+        font-size: 14pt;
+        margin: 10px;
+    }
 }
