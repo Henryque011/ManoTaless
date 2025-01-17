@@ -666,8 +666,13 @@ body {
     }
 
     .side {
+        height: 1000px;
 
-        div:nth-child(1) {
+        .box_cabelo {
+            flex-direction: column;
+        }
+
+        div {
             display: flex;
 
             img {
@@ -675,7 +680,6 @@ body {
                 border-radius: 20px;
                 margin: 10px;
                 background-color: red;
-                /* box-shadow: #9158be 5px 10px 5px; */
                 filter: drop-shadow(0 0 1rem rgb(94, 7, 94));
             }
 
@@ -690,7 +694,6 @@ body {
                 text-transform: uppercase;
                 font-family: var(--font_poppins);
                 padding: 10px;
-                /* background-color: grey; */
                 border-radius: 20px;
                 height: 100px;
                 font-weight: 500;
