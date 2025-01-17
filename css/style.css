@@ -596,3 +596,57 @@ body {
         }
     }
 }
+
+/* pag servicos */
+
+
+.modelo {
+
+    h2 {
+        align-items: center;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: var(--font_goldman);
+        font-size: 18pt;
+        margin: 20px;
+        padding: 5px;
+    }
+
+    h3 {
+        display: flex;
+        justify-content: center;
+        color: var(--medium_purple);
+        font-family: var(--font_nosifer);
+        font-size: 14pt;
+        margin: 10px;
+    }
+
+    .side {
+        height: 500px;
+
+        .modelo_carac {
+            ul {
+                li {
+                    display: flex;
+                    padding: 10px;
+                    font-size: 14pt;
+                    text-align: center;
+                    align-items: center;
+                    word-spacing: 2pt;
+                    font-weight: 500;
+                    font-family: var(--font_poppins);
+                    text-transform: uppercase;
+                }
+            }
+        }
+
+        img {
+            width: 500px;
+            height: 400px;
+        }
+
+    }
+
+
+
+}
