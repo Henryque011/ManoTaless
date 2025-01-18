@@ -666,6 +666,7 @@ body {
     }
 
     h4 {
+        font-weight: 500;
         align-items: center;
         text-align: center;
         text-transform: uppercase;
