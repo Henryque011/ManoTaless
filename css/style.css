@@ -667,12 +667,17 @@ body {
 
     .side {
         height: 1000px;
+        justify-content: space-between;
+        width: 100%;
+        margin: 0;
 
         .box_cabelo {
             flex-direction: column;
         }
 
         div {
+            padding: 10px;
+            margin: 10px;
             display: flex;
 
             img {
