@@ -748,3 +748,15 @@ body {
         }
     }
 }
+
+.estilos_fotos {
+    h2 {
+        align-items: center;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: var(--font_goldman);
+        font-size: 18pt;
+        margin: 20px;
+        padding: 5px;
+    }
+}
