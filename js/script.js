@@ -31,3 +31,9 @@ btnSair.addEventListener('click', () => {
     menuLateral.classList.remove('ativo');  
     body.classList.remove('body-ativo');  
 });
+
+//estilos 
+document.addEventListener('DOMContentLoaded', function () {
+    const visao = document.getElementById('visao');
+    const valores = document.getElementById('valores');
+    const missao = document.getElementById('missao');
