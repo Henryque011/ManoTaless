@@ -61,34 +61,44 @@ btnSair.addEventListener('click', () => {
 // });
 
 document.addEventListener('DOMContentLoaded', function () {
-    const todos = document.getElementById('todos');
-    const cortes = document.getElementById('cortes');
-    const trancas = document.getElementById('trancas');
-    
+    const todosButton = document.getElementById('todos');
+    const cortesButton = document.getElementById('cortes');
+    const trancasButton = document.getElementById('trancas');
+
     // Seleciona todas as imagens de cortes e tranças
     const imagensCortes = document.querySelectorAll('.imagemCorte');
     const imagensTrancas = document.querySelectorAll('.imagemTranca');
 
     // Função para mostrar todas as imagens
-    function mostrarTodos() {
-        imagensCortes.forEach(img => img.style.display = 'block');
-        imagensTrancas.forEach(img => img.style.display = 'block');
+    function mostrarTodasImagens() {
+        imagensCortes.forEach(img => img.classList.add('ativo'));
+        imagensTrancas.forEach(img => img.classList.add('ativo'));
     }
 
     // Função para mostrar apenas as imagens de cortes
     function mostrarCortes() {
-        imagensCortes.forEach(img => img.style.display = 'block');
-        imagensTrancas.forEach(img => img.style.display = 'none');
+        imagensCortes.forEach(img => img.classList.add('ativo'));
+        imagensTrancas.forEach(img => img.classList.remove('ativo'));
     }
 
     // Função para mostrar apenas as imagens de tranças
     function mostrarTrancas() {
-        imagensCortes.forEach(img => img.style.display = 'none');
-        imagensTrancas.forEach(img => img.style.display = 'block');
+        imagensCortes.forEach(img => img.classList.remove('ativo'));
+        imagensTrancas.forEach(img => img.classList.add('ativo'));
+    }
+
+    // Função para ocultar todas as imagens
+    function esconderTodasImagens() {
+        imagensCortes.forEach(img => img.classList.remove('ativo'));
+        imagensTrancas.forEach(img => img.classList.remove('ativo'));
     }
 
     // Eventos dos botões
-    todos.addEventListener('click', mostrarTodos);
-    cortes.addEventListener('click', mostrarCortes);
-    trancas.addEventListener('click', mostrarTrancas);
+    todosButton.addEventListener('click', mostrarTodasImagens);
+    cortesButton.addEventListener('click', mostrarCortes);
+    trancasButton.addEventListener('click', mostrarTrancas);
+
+    // Inicia com todas as imagens visíveis
+    mostrarTodasImagens();
 });
+
