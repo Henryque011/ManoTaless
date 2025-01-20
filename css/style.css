@@ -759,4 +759,12 @@ body {
         margin: 20px;
         padding: 5px;
     }
+
+    .imagemCorte, .imagemTranca {
+        display: none; /* Esconde as imagens por padrão */
+    }
+    
+    .ativo {
+        display: block; /* Exibe a imagem com a classe "ativo" */
+    }
 }
