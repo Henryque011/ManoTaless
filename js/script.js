@@ -101,4 +101,3 @@ document.addEventListener('DOMContentLoaded', function () {
     // Inicia com todas as imagens visíveis
     mostrarTodasImagens();
 });
-
