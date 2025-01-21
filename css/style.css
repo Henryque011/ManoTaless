@@ -760,11 +760,16 @@ body {
         padding: 5px;
     }
 
-    .imagemCorte, .imagemTranca {
-        /* display: none; Esconde as imagens por padrão */
+    /* Inicialmente, as imagens de corte e tranças podem estar ocultas */
+    .imagemCorte,
+    .imagemTranca {
+        display: none;
     }
-    
-    .ativo {
-        /* display: block; Exibe a imagem com a classe "ativo" */
+
+    /* Quando a classe 'ativo' for adicionada, as imagens serão visíveis */
+    .imagemCorte.ativo,
+    .imagemTranca.ativo {
+        display: block;
     }
+
 }
