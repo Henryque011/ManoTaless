@@ -761,10 +761,10 @@ body {
     }
 
     .imagemCorte, .imagemTranca {
-        display: none; /* Esconde as imagens por padrão */
+        /* display: none; Esconde as imagens por padrão */
     }
     
     .ativo {
-        display: block; /* Exibe a imagem com a classe "ativo" */
+        /* display: block; Exibe a imagem com a classe "ativo" */
     }
 }
