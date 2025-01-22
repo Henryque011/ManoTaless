@@ -760,16 +760,32 @@ body {
         padding: 5px;
     }
 
-    /* Inicialmente, as imagens de corte e tranças podem estar ocultas */
-    .imagemCorte,
-    .imagemTranca {
-        display: none;
-    }
+    .button_estilos {
+        button {
+            width: 250px;
+            height: 50px;
+            border: none;
+            border-radius: 20px;
+            background-color: var(--medium_purple);
+            text-decoration: none;
+            font-size: 16pt;
+            color: white;
+            font-family: var(--font_poppins);
+            text-transform: uppercase;
+            font-weight: bold;
 
-    /* Quando a classe 'ativo' for adicionada, as imagens serão visíveis */
-    .imagemCorte.ativo,
-    .imagemTranca.ativo {
-        display: block;
-    }
+        }
 
+        /* Inicialmente, as imagens de corte e tranças podem estar ocultas */
+        .imagemCorte,
+        .imagemTranca {
+            display: none;
+        }
+
+        /* Quando a classe 'ativo' for adicionada, as imagens serão visíveis */
+        .imagemCorte.ativo,
+        .imagemTranca.ativo {
+            display: block;
+        }
+    }
 }
