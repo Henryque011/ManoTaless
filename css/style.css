@@ -750,6 +750,8 @@ body {
 }
 
 .estilos_fotos {
+    align-items: center;
+
     h2 {
         align-items: center;
         text-align: center;
@@ -779,13 +781,18 @@ body {
         /* Inicialmente, as imagens de corte e tranças podem estar ocultas */
         .imagemCorte,
         .imagemTranca {
-            display: none;
+            img {
+                display: none;
+            }
         }
 
         /* Quando a classe 'ativo' for adicionada, as imagens serão visíveis */
         .imagemCorte.ativo,
         .imagemTranca.ativo {
-            display: block;
+            img {
+                display: block;
+
+            }
         }
     }
 }
