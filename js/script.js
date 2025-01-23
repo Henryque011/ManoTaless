@@ -32,72 +32,74 @@ btnSair.addEventListener('click', () => {
     body.classList.remove('body-ativo');
 });
 
-//estilos 
+estilos 
+document.addEventListener('DOMContentLoaded', function () {
+    const corte = document.getElementById('corte');
+    const tranca = document.getElementById('tranca');
+    // const missao = document.getElementById('missao');
+    const img_corte = document.getElementById('img_corte');
+    const img_tranca = document.getElementById('img_tranca');
+    // const img_missao = document.getElementById('img_missao');
+
+    corte.addEventListener('click', function () {
+        img_corte.classList.add('ativo');
+        img_tranca.classList.remove('ativo');
+        // img_missao .classList.remove('ativo');
+    });
+
+    tranca.addEventListener('click', function () {
+        img_corte.classList.remove('ativo');
+        img_tranca.classList.add('ativo');
+        // img_missao.classList.remove('ativo');
+    });
+
+    // missao.addEventListener('click', function () {
+    //     img_vi.classList.remove('ativo');
+    //     img_valores.classList.remove('ativo');
+    //     img_missao.classList.add('ativo');
+    // });
+});
+
 // document.addEventListener('DOMContentLoaded', function () {
-//     const corte = document.getElementById('corte');
-//     const tranca = document.getElementById('tranca');
-//     // const missao = document.getElementById('missao');
-//     const img_corte = document.getElementById('img_corte');
-//     const img_tranca = document.getElementById('img_tranca');
-//     // const img_missao = document.getElementById('img_missao');
+//     const todosButton = document.getElementById('todos');
+//     const cortesButton = document.getElementById('cortes');
+//     const trancasButton = document.getElementById('trancas');
 
-//     corte.addEventListener('click', function () {
-//         img_corte.classList.add('ativo');
-//         img_tranca.classList.remove('ativo');
-//         // img_missao .classList.remove('ativo');
-//     });
+//     // Seleciona todas as imagens de cortes e tranças
+//     const imagensCortes = document.querySelectorAll('.imagemCorte');
+//     const imagensTrancas = document.querySelectorAll('.imagemTranca');
 
-//     tranca.addEventListener('click', function () {
-//         img_corte.classList.remove('ativo');
-//         img_tranca.classList.add('ativo');
-//         // img_missao.classList.remove('ativo');
-//     });
+//     // Função para mostrar todas as imagens
+//     function mostrarTodasImagens() {
+//         imagensCortes.forEach(img => img.classList.add('ativo'));
+//         imagensTrancas.forEach(img => img.classList.add('ativo'));
+//     }
 
-//     // missao.addEventListener('click', function () {
-//     //     img_vi.classList.remove('ativo');
-//     //     img_valores.classList.remove('ativo');
-//     //     img_missao.classList.add('ativo');
-//     // });
+//     // Função para mostrar apenas as imagens de cortes
+//     function mostrarCortes() {
+//         imagensCortes.forEach(img => img.classList.add('ativo'));
+//         imagensTrancas.forEach(img => img.classList.remove('ativo'));
+//     }
+
+//     // Função para mostrar apenas as imagens de tranças
+//     function mostrarTrancas() {
+//         imagensCortes.forEach(img => img.classList.remove('ativo'));
+//         imagensTrancas.forEach(img => img.classList.add('ativo'));
+//     }
+
+//     // Função para ocultar todas as imagens
+//     function esconderTodasImagens() {
+//         imagensCortes.forEach(img => img.classList.remove('ativo'));
+//         imagensTrancas.forEach(img => img.classList.remove('ativo'));
+//     }
+
+//     // Eventos dos botões
+//     todosButton.addEventListener('click', mostrarTodasImagens);
+//     cortesButton.addEventListener('click', mostrarCortes);
+//     trancasButton.addEventListener('click', mostrarTrancas);
+
+//     // Inicia com todas as imagens visíveis
+//     mostrarTodasImagens();
 // });
 
-document.addEventListener('DOMContentLoaded', function () {
-    const todosButton = document.getElementById('todos');
-    const cortesButton = document.getElementById('cortes');
-    const trancasButton = document.getElementById('trancas');
 
-    // Seleciona todas as imagens de cortes e tranças
-    const imagensCortes = document.querySelectorAll('.imagemCorte');
-    const imagensTrancas = document.querySelectorAll('.imagemTranca');
-
-    // Função para mostrar todas as imagens
-    function mostrarTodasImagens() {
-        imagensCortes.forEach(img => img.classList.add('ativo'));
-        imagensTrancas.forEach(img => img.classList.add('ativo'));
-    }
-
-    // Função para mostrar apenas as imagens de cortes
-    function mostrarCortes() {
-        imagensCortes.forEach(img => img.classList.add('ativo'));
-        imagensTrancas.forEach(img => img.classList.remove('ativo'));
-    }
-
-    // Função para mostrar apenas as imagens de tranças
-    function mostrarTrancas() {
-        imagensCortes.forEach(img => img.classList.remove('ativo'));
-        imagensTrancas.forEach(img => img.classList.add('ativo'));
-    }
-
-    // Função para ocultar todas as imagens
-    function esconderTodasImagens() {
-        imagensCortes.forEach(img => img.classList.remove('ativo'));
-        imagensTrancas.forEach(img => img.classList.remove('ativo'));
-    }
-
-    // Eventos dos botões
-    todosButton.addEventListener('click', mostrarTodasImagens);
-    cortesButton.addEventListener('click', mostrarCortes);
-    trancasButton.addEventListener('click', mostrarTrancas);
-
-    // Inicia com todas as imagens visíveis
-    mostrarTodasImagens();
-});
