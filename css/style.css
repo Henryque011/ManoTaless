@@ -751,6 +751,7 @@ body {
 
 .estilos_fotos {
     align-items: center;
+    text-align: center;
 
     h2 {
         align-items: center;
@@ -762,36 +763,36 @@ body {
         padding: 5px;
     }
 
-    .button_estilos {
-        button {
-            width: 250px;
-            height: 50px;
-            border: none;
-            border-radius: 20px;
-            background-color: var(--medium_purple);
-            text-decoration: none;
-            font-size: 16pt;
-            color: white;
-            font-family: var(--font_poppins);
-            text-transform: uppercase;
-            font-weight: bold;
+    .box_estilos {
+        .button_estilos {
+            button {
+                width: 250px;
+                height: 50px;
+                border: none;
+                margin: 10px;
+                border-radius: 20px;
+                background-color: var(--medium_purple);
+                text-decoration: none;
+                font-size: 16pt;
+                color: white;
+                font-family: var(--font_poppins);
+                text-transform: uppercase;
+                font-weight: bold;
 
-        }
-
-        /* Inicialmente, as imagens de corte e tranças podem estar ocultas */
-        .imagemCorte,
-        .imagemTranca {
-            img {
-                display: none;
             }
-        }
 
-        /* Quando a classe 'ativo' for adicionada, as imagens serão visíveis */
-        .imagemCorte.ativo,
-        .imagemTranca.ativo {
-            img {
-                display: block;
+            .imagemCorte,
+            .imagemTranca {
+                img {
+                    display: none;
+                }
+            }
 
+            .imagemCorte.ativo,
+            .imagemTranca.ativo {
+                img {
+                    display: block;
+                }
             }
         }
     }
