@@ -32,33 +32,33 @@ btnSair.addEventListener('click', () => {
     body.classList.remove('body-ativo');
 });
 
-estilos 
-document.addEventListener('DOMContentLoaded', function () {
-    const corte = document.getElementById('corte');
-    const tranca = document.getElementById('tranca');
-    // const missao = document.getElementById('missao');
-    const img_corte = document.getElementById('img_corte');
-    const img_tranca = document.getElementById('img_tranca');
-    // const img_missao = document.getElementById('img_missao');
+// estilos 
+// document.addEventListener('DOMContentLoaded', function () {
+//     const corte = document.getElementById('corte');
+//     const tranca = document.getElementById('tranca');
+//     // const missao = document.getElementById('missao');
+//     const img_corte = document.getElementById('img_corte');
+//     const img_tranca = document.getElementById('img_tranca');
+//     // const img_missao = document.getElementById('img_missao');
 
-    corte.addEventListener('click', function () {
-        img_corte.classList.add('ativo');
-        img_tranca.classList.remove('ativo');
-        // img_missao .classList.remove('ativo');
-    });
+//     corte.addEventListener('click', function () {
+//         img_corte.classList.add('ativo');
+//         img_tranca.classList.remove('ativo');
+//         // img_missao .classList.remove('ativo');
+//     });
 
-    tranca.addEventListener('click', function () {
-        img_corte.classList.remove('ativo');
-        img_tranca.classList.add('ativo');
-        // img_missao.classList.remove('ativo');
-    });
+//     tranca.addEventListener('click', function () {
+//         img_corte.classList.remove('ativo');
+//         img_tranca.classList.add('ativo');
+//         // img_missao.classList.remove('ativo');
+//     });
 
-    // missao.addEventListener('click', function () {
-    //     img_vi.classList.remove('ativo');
-    //     img_valores.classList.remove('ativo');
-    //     img_missao.classList.add('ativo');
-    // });
-});
+//     // missao.addEventListener('click', function () {
+//     //     img_vi.classList.remove('ativo');
+//     //     img_valores.classList.remove('ativo');
+//     //     img_missao.classList.add('ativo');
+//     // });
+// });
 
 // document.addEventListener('DOMContentLoaded', function () {
 //     const todosButton = document.getElementById('todos');
@@ -101,5 +101,64 @@ document.addEventListener('DOMContentLoaded', function () {
 //     // Inicia com todas as imagens visíveis
 //     mostrarTodasImagens();
 // });
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    const visao = document.getElementById('visao');
+    const valores = document.getElementById('valores');
+    const missao = document.getElementById('missao');
+    const conteudoVisao = document.getElementById('conteudoVisao');
+    const conteudoValores = document.getElementById('conteudoValores');
+    const conteudoMissao = document.getElementById('conteudoMissao');
+
+    visao.addEventListener('click', function () {
+        conteudoVisao.classList.add('ativo');
+        conteudoValores.classList.remove('ativo');
+        conteudoMissao.classList.remove('ativo');
+    });
+
+    valores.addEventListener('click', function () {
+        conteudoVisao.classList.remove('ativo');
+        conteudoValores.classList.add('ativo');
+        conteudoMissao.classList.remove('ativo');
+    });
+
+    missao.addEventListener('click', function () {
+        conteudoVisao.classList.remove('ativo');
+        conteudoValores.classList.remove('ativo');
+        conteudoMissao.classList.add('ativo');
+    });
+});
+
+// parte da img juntamente com os botões acima
+
+document.addEventListener('DOMContentLoaded', function () {
+    const visao = document.getElementById('visao');
+    const valores = document.getElementById('valores');
+    const missao = document.getElementById('missao');
+    const img_visao = document.getElementById('img_visao');
+    const img_valores = document.getElementById('img_valores');
+    const img_missao = document.getElementById('img_missao');
+
+    visao.addEventListener('click', function () {
+        img_visao.classList.add('ativo');
+        img_valores.classList.remove('ativo');
+        img_missao.classList.remove('ativo');
+    });
+
+    valores.addEventListener('click', function () {
+        img_visao.classList.remove('ativo');
+        img_valores.classList.add('ativo');
+        img_missao.classList.remove('ativo');
+    });
+
+    missao.addEventListener('click', function () {
+        img_visao.classList.remove('ativo');
+        img_valores.classList.remove('ativo');
+        img_missao.classList.add('ativo');
+    });
+});
+
+
 
 
