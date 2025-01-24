@@ -66,26 +66,26 @@ document.addEventListener('DOMContentLoaded', function () {
     const todos = document.getElementById('todos');
     const cortes = document.getElementById('corte');
     const trancas = document.getElementById('trancas');
-    const img_visao = document.getElementById('img_visao');
-    const img_valores = document.getElementById('img_valores');
+    const imagemCorte = document.getElementById('imagemCorte');
+    const imagemTranca = document.getElementById('imagemTranca');
     const img_missao = document.getElementById('img_missao');
 
-    visao.addEventListener('click', function () {
+    todos.addEventListener('click', function () {
         img_visao.classList.add('ativo');
-        img_valores.classList.remove('ativo');
+        imagemCorte.classList.add('ativo');
+        imagemTranca.classList.add('ativo');
+    });
+
+    cortes.addEventListener('click', function () {
+        imagemCorte.classList.add('ativo');
+        imagemTranca.classList.remove('ativo');
         img_missao.classList.remove('ativo');
     });
 
-    valores.addEventListener('click', function () {
-        img_visao.classList.remove('ativo');
-        img_valores.classList.add('ativo');
+    trancas.addEventListener('click', function () {
+        imagemCorte.classList.remove('ativo');
+        imagemTranca.classList.add('ativo');
         img_missao.classList.remove('ativo');
-    });
-
-    missao.addEventListener('click', function () {
-        img_visao.classList.remove('ativo');
-        img_valores.classList.remove('ativo');
-        img_missao.classList.add('ativo');
     });
 });
 
