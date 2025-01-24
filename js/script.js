@@ -41,26 +41,29 @@ document.addEventListener('DOMContentLoaded', function () {
     
     // Imagens
     const imagensCorte = document.querySelectorAll('.imagemCorte'); // Seleciona todas as imagens de corte
-    const imagemTranca = document.getElementById('imagemTranca');
+    const imagensTranca = document.querySelectorAll('.imagemTranca'); // Seleciona todas as imagens de tranças
     
     // Exibe todas as imagens
     todos.addEventListener('click', function () {
         // Exibe todas as imagens de corte
         imagensCorte.forEach(imagem => imagem.classList.add('ativo'));
-        imagemTranca.classList.add('ativo');
+        // Exibe todas as imagens de trança
+        imagensTranca.forEach(imagem => imagem.classList.add('ativo'));
     });
 
-    // Exibe apenas a imagem de corte
+    // Exibe apenas as imagens de corte
     cortes.addEventListener('click', function () {
         // Exibe todas as imagens de corte
         imagensCorte.forEach(imagem => imagem.classList.add('ativo'));
-        imagemTranca.classList.remove('ativo');
+        // Esconde as imagens de trança
+        imagensTranca.forEach(imagem => imagem.classList.remove('ativo'));
     });
 
-    // Exibe apenas a imagem de tranças
+    // Exibe apenas as imagens de tranças
     trancas.addEventListener('click', function () {
         // Esconde as imagens de corte
         imagensCorte.forEach(imagem => imagem.classList.remove('ativo'));
-        imagemTranca.classList.add('ativo');
+        // Exibe todas as imagens de trança
+        imagensTranca.forEach(imagem => imagem.classList.add('ativo'));
     });
 });
