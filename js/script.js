@@ -32,46 +32,16 @@ btnSair.addEventListener('click', () => {
     body.classList.remove('body-ativo');
 });
 
-//  ====================
+// fotos 
 document.addEventListener('DOMContentLoaded', function () {
     const todos = document.getElementById('todos');
-    const cortes = document.getElementById('corte');
+    const cortes = document.getElementById('cortes');
     const trancas = document.getElementById('trancas');
-    const conteudoVisao = document.getElementById('conteudoVisao');
-    const conteudoValores = document.getElementById('conteudoValores');
-    const conteudoMissao = document.getElementById('conteudoMissao');
 
-    visao.addEventListener('click', function () {
-        conteudoVisao.classList.add('ativo');
-        conteudoValores.classList.remove('ativo');
-        conteudoMissao.classList.remove('ativo');
-    });
-
-    valores.addEventListener('click', function () {
-        conteudoVisao.classList.remove('ativo');
-        conteudoValores.classList.add('ativo');
-        conteudoMissao.classList.remove('ativo');
-    });
-
-    missao.addEventListener('click', function () {
-        conteudoVisao.classList.remove('ativo');
-        conteudoValores.classList.remove('ativo');
-        conteudoMissao.classList.add('ativo');
-    });
-});
-
-// parte da img juntamente com os botões acima
-
-document.addEventListener('DOMContentLoaded', function () {
-    const todos = document.getElementById('todos');
-    const cortes = document.getElementById('corte');
-    const trancas = document.getElementById('trancas');
     const imagemCorte = document.getElementById('imagemCorte');
     const imagemTranca = document.getElementById('imagemTranca');
-    const img_missao = document.getElementById('img_missao');
 
     todos.addEventListener('click', function () {
-        img_visao.classList.add('ativo');
         imagemCorte.classList.add('ativo');
         imagemTranca.classList.add('ativo');
     });
@@ -79,71 +49,11 @@ document.addEventListener('DOMContentLoaded', function () {
     cortes.addEventListener('click', function () {
         imagemCorte.classList.add('ativo');
         imagemTranca.classList.remove('ativo');
-        img_missao.classList.remove('ativo');
     });
 
     trancas.addEventListener('click', function () {
         imagemCorte.classList.remove('ativo');
         imagemTranca.classList.add('ativo');
-        img_missao.classList.remove('ativo');
-    });
-});
-
-// =====================
-
-document.addEventListener('DOMContentLoaded', function () {
-    const visao = document.getElementById('visao');
-    const valores = document.getElementById('valores');
-    const missao = document.getElementById('missao');
-    const conteudoVisao = document.getElementById('conteudoVisao');
-    const conteudoValores = document.getElementById('conteudoValores');
-    const conteudoMissao = document.getElementById('conteudoMissao');
-
-    visao.addEventListener('click', function () {
-        conteudoVisao.classList.add('ativo');
-        conteudoValores.classList.remove('ativo');
-        conteudoMissao.classList.remove('ativo');
-    });
-
-    valores.addEventListener('click', function () {
-        conteudoVisao.classList.remove('ativo');
-        conteudoValores.classList.add('ativo');
-        conteudoMissao.classList.remove('ativo');
-    });
-
-    missao.addEventListener('click', function () {
-        conteudoVisao.classList.remove('ativo');
-        conteudoValores.classList.remove('ativo');
-        conteudoMissao.classList.add('ativo');
-    });
-});
-
-// parte da img juntamente com os botões acima
-
-document.addEventListener('DOMContentLoaded', function () {
-    const visao = document.getElementById('visao');
-    const valores = document.getElementById('valores');
-    const missao = document.getElementById('missao');
-    const img_visao = document.getElementById('img_visao');
-    const img_valores = document.getElementById('img_valores');
-    const img_missao = document.getElementById('img_missao');
-
-    visao.addEventListener('click', function () {
-        img_visao.classList.add('ativo');
-        img_valores.classList.remove('ativo');
-        img_missao.classList.remove('ativo');
-    });
-
-    valores.addEventListener('click', function () {
-        img_visao.classList.remove('ativo');
-        img_valores.classList.add('ativo');
-        img_missao.classList.remove('ativo');
-    });
-
-    missao.addEventListener('click', function () {
-        img_visao.classList.remove('ativo');
-        img_valores.classList.remove('ativo');
-        img_missao.classList.add('ativo');
     });
 });
 
