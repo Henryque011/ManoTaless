@@ -806,8 +806,10 @@ body {
         }
 
         .imgs_box {
-            display: flex;
-            justify-content: space-evenly;
+            div {
+                display: flex;
+                justify-content: space-between;
+            }
 
             img {
                 width: 300px;
