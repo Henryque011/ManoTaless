@@ -38,10 +38,12 @@ document.addEventListener('DOMContentLoaded', function () {
     const todos = document.getElementById('todos');
     const cortes = document.getElementById('cortes');
     const trancas = document.getElementById('trancas');
+    const barbas = document.getElementById('barbas')
     
     // Imagens
     const imagensCorte = document.querySelectorAll('.imagemCorte'); // Seleciona todas as imagens de corte
     const imagensTranca = document.querySelectorAll('.imagemTranca'); // Seleciona todas as imagens de tranças
+    const imagensBarba = document.querySelectorAll('.imagemBarba');
     
     // Exibe todas as imagens
     todos.addEventListener('click', function () {
@@ -49,6 +51,7 @@ document.addEventListener('DOMContentLoaded', function () {
         imagensCorte.forEach(imagem => imagem.classList.add('ativo'));
         // Exibe todas as imagens de trança
         imagensTranca.forEach(imagem => imagem.classList.add('ativo'));
+        imagensBarba.forEach(imagem => imagem.classList.add('.ativo'));
     });
 
     // Exibe apenas as imagens de corte
@@ -57,6 +60,8 @@ document.addEventListener('DOMContentLoaded', function () {
         imagensCorte.forEach(imagem => imagem.classList.add('ativo'));
         // Esconde as imagens de trança
         imagensTranca.forEach(imagem => imagem.classList.remove('ativo'));
+        imagensBarba.forEach(imagem => imagem.classList.remove('.ativo'));
+
     });
 
     // Exibe apenas as imagens de tranças
@@ -65,5 +70,12 @@ document.addEventListener('DOMContentLoaded', function () {
         imagensCorte.forEach(imagem => imagem.classList.remove('ativo'));
         // Exibe todas as imagens de trança
         imagensTranca.forEach(imagem => imagem.classList.add('ativo'));
+        imagensBarba.forEach(imagem => imagem.classList.remove('.ativo'));
     });
+
+    barbas.addEventListener('click', function() {
+        imagensCorte.forEach(imagem => imagem.classList.remove('ativo'));
+        imagensTranca.forEach(imagem => imagem.classList.remove('ativo'));
+        imagensBarba.forEach(imagem => imagem.classList.add('.ativo'));
+    })
 });
