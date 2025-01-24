@@ -34,29 +34,33 @@ btnSair.addEventListener('click', () => {
 
 // fotos 
 document.addEventListener('DOMContentLoaded', function () {
+    // Botões
     const todos = document.getElementById('todos');
     const cortes = document.getElementById('cortes');
     const trancas = document.getElementById('trancas');
-
-    const imagemCorte = document.getElementById('imagemCorte');
+    
+    // Imagens
+    const imagensCorte = document.querySelectorAll('.imagemCorte'); // Seleciona todas as imagens de corte
     const imagemTranca = document.getElementById('imagemTranca');
-
+    
+    // Exibe todas as imagens
     todos.addEventListener('click', function () {
-        imagemCorte.classList.add('ativo');
+        // Exibe todas as imagens de corte
+        imagensCorte.forEach(imagem => imagem.classList.add('ativo'));
         imagemTranca.classList.add('ativo');
     });
 
+    // Exibe apenas a imagem de corte
     cortes.addEventListener('click', function () {
-        imagemCorte.classList.add('ativo');
+        // Exibe todas as imagens de corte
+        imagensCorte.forEach(imagem => imagem.classList.add('ativo'));
         imagemTranca.classList.remove('ativo');
     });
 
+    // Exibe apenas a imagem de tranças
     trancas.addEventListener('click', function () {
-        imagemCorte.classList.remove('ativo');
+        // Esconde as imagens de corte
+        imagensCorte.forEach(imagem => imagem.classList.remove('ativo'));
         imagemTranca.classList.add('ativo');
     });
 });
-
-
-
-
