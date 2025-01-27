@@ -813,8 +813,7 @@ body {
         }
 
         .imgs_box {
-
-            .imagem_conteiner {
+            .imagem_container {
                 display: flex;
                 justify-content: space-between;
                 position: relative;
@@ -837,12 +836,26 @@ body {
                     filter: brightness(0);
                     transform: scale(1.05);
                 }
+
+                .texto-hover {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    color: white;
+                    font-size: 16px;
+                    font-weight: bold;
+                    text-align: center;
+                    opacity: 0;
+                    transition: opacity 0.3s ease;
+                    pointer-events: none;
+                }
+
+                .imagem-container:hover,
+                .texto-hover {
+                    opacity: 1;
+                }
             }
-
-
-
-
-
 
             .imagemTranca,
             .imagemCorte,
