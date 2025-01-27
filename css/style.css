@@ -813,6 +813,11 @@ body {
         }
 
         .imgs_box {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+
             .imagem_container {
                 display: flex;
                 justify-content: space-between;
@@ -820,7 +825,11 @@ body {
                 display: inline-block;
                 overflow: hidden;
 
-                img {
+                .imagemCorte,
+                .imagemTranca,
+                .imagemBarba,
+                .imagemDread,
+                .imagemSobrancelha {
                     width: 300px;
                     height: 300px;
                     margin: 5px;
