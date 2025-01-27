@@ -783,6 +783,7 @@ body {
     }
 
     .box_estilos {
+
         .button_estilos {
             button {
                 width: 250px;
@@ -806,6 +807,9 @@ body {
         }
 
         .imgs_box {
+            width: 300px;
+            height: 300px;
+
             div {
                 display: flex;
                 justify-content: space-between;
