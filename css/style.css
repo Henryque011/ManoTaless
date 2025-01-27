@@ -714,6 +714,11 @@ body {
                 filter: drop-shadow(0 0 1rem rgb(94, 7, 94));
             }
 
+            img:hover {
+                transition: 0.5s ease;
+                transform: scale(1.2);
+            }
+
             p {
                 display: flex;
                 justify-content: center;
@@ -808,8 +813,6 @@ body {
         }
 
         .imgs_box {
-            /* width: 300px;
-            height: 300px; */
 
             div {
                 display: flex;
@@ -822,11 +825,17 @@ body {
                 margin: 5px;
                 padding: 5px;
                 border-radius: 20px;
+                filter: 0.3s ease, transform 0.3s ease;
             }
 
             img:hover {
                 color: red;
+                transition: 0.5s ease;
+                transform: scale(1.1);
+                filter: brightness(0);
+                transform: scale(1.05);
             }
+
 
             .imagemTranca,
             .imagemCorte,
