@@ -39,6 +39,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const cortes = document.getElementById('cortes');
     const trancas = document.getElementById('trancas');
     const barbas = document.getElementById('barbas');
+    const dreads = document.getElementById('dreads')
     
     // Imagens
     const imagensCorte = document.querySelectorAll('.imagemCorte'); // Seleciona todas as imagens de corte
