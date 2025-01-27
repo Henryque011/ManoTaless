@@ -34,49 +34,64 @@ btnSair.addEventListener('click', () => {
 
 // fotos 
 document.addEventListener('DOMContentLoaded', function () {
-    // Botões
     const todos = document.getElementById('todos');
     const cortes = document.getElementById('cortes');
     const trancas = document.getElementById('trancas');
     const barbas = document.getElementById('barbas');
-    const dreads = document.getElementById('dreads')
-    
-    // Imagens
-    const imagensCorte = document.querySelectorAll('.imagemCorte'); // Seleciona todas as imagens de corte
-    const imagensTranca = document.querySelectorAll('.imagemTranca'); // Seleciona todas as imagens de tranças
+    const dreads = document.getElementById('dreads');
+    const sobrancelha = document.getElementById('sobrancelha');
+
+    const imagensCorte = document.querySelectorAll('.imagemCorte');
+    const imagensTranca = document.querySelectorAll('.imagemTranca');
     const imagensBarba = document.querySelectorAll('.imagemBarba');
-    
-    // Exibe todas as imagens
+    const imagensDread = document.querySelectorAll('.imagemDread');
+    const imagensSobrancelha = document.querySelectorAll('.imagemSobrancelha');
+
     todos.addEventListener('click', function () {
-        // Exibe todas as imagens de corte
         imagensCorte.forEach(imagem => imagem.classList.add('ativo'));
-        // Exibe todas as imagens de trança
         imagensTranca.forEach(imagem => imagem.classList.add('ativo'));
         imagensBarba.forEach(imagem => imagem.classList.add('ativo'));
+        imagensDread.forEach(imagem => imagem.classList.add('ativo'));
+        imagensSobrancelha.forEach(imagem => imagem.classList.add('ativo'));
     });
 
-    // Exibe apenas as imagens de corte
     cortes.addEventListener('click', function () {
-        // Exibe todas as imagens de corte
         imagensCorte.forEach(imagem => imagem.classList.add('ativo'));
-        // Esconde as imagens de trança
         imagensTranca.forEach(imagem => imagem.classList.remove('ativo'));
         imagensBarba.forEach(imagem => imagem.classList.remove('ativo'));
-
+        imagensDread.forEach(imagem => imagem.classList.remove('ativo'));
+        imagensSobrancelha.forEach(imagem => imagem.classList.remove('ativo'));
     });
 
-    // Exibe apenas as imagens de tranças
     trancas.addEventListener('click', function () {
-        // Esconde as imagens de corte
         imagensCorte.forEach(imagem => imagem.classList.remove('ativo'));
-        // Exibe todas as imagens de trança
         imagensTranca.forEach(imagem => imagem.classList.add('ativo'));
         imagensBarba.forEach(imagem => imagem.classList.remove('ativo'));
+        imagensDread.forEach(imagem => imagem.classList.remove('ativo'));
+        imagensSobrancelha.forEach(imagem => imagem.classList.remove('ativo'));
     });
 
-    barbas.addEventListener('click', function() {
+    barbas.addEventListener('click', function () {
         imagensCorte.forEach(imagem => imagem.classList.remove('ativo'));
         imagensTranca.forEach(imagem => imagem.classList.remove('ativo'));
         imagensBarba.forEach(imagem => imagem.classList.add('ativo'));
+        imagensDread.forEach(imagem => imagem.classList.remove('ativo'));
+        imagensSobrancelha.forEach(imagem => imagem.classList.remove('ativo'));
+    })
+
+    dreads.addEventListener('click', function () {
+        imagensCorte.forEach(imagem => imagem.classList.remove('ativo'));
+        imagensTranca.forEach(imagem => imagem.classList.remove('ativo'));
+        imagensBarba.forEach(imagem => imagem.classList.remove('ativo'));
+        imagensDread.forEach(imagem => imagem.classList.add('ativo'));
+        imagensSobrancelha.forEach(imagem => imagem.classList.remove('ativo'));
+    })
+
+    sobrancelha.addEventListener('click', function () {
+        imagensCorte.forEach(imagem => imagem.classList.remove('ativo'));
+        imagensTranca.forEach(imagem => imagem.classList.remove('ativo'));
+        imagensBarba.forEach(imagem => imagem.classList.remove('ativo'));
+        imagensDread.forEach(imagem => imagem.classList.remove('ativo'));
+        imagensSobrancelha.forEach(imagem => imagem.classList.add('ativo'));
     })
 });
