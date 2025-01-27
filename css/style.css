@@ -818,11 +818,9 @@ body {
                 border-radius: 20px;
             }
 
-            .imagemTranca {
-                display: none;
-            }
-
-            .imagemCorte {
+            .imagemTranca,
+            .imagemCorte,
+            .imagemBarba {
                 display: none;
             }
 
