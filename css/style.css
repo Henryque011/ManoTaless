@@ -865,9 +865,11 @@ body {
                     text-shadow: #7d1ecc 1px 1px;
                 }
 
-                
                 .imagemCorte-container:hover .texto-hover,
-                .imagemTranca-container:hover .texto-hover{
+                .imagemTranca-container:hover .texto-hover,
+                .imagemBarba-container:hover .texto-hover,
+                .imagemDread-container:hover .text-hover,
+                .imagemSobrancelha-container:hover .texto-hover {
                     opacity: 1;
                 }
             }
