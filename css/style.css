@@ -825,7 +825,11 @@ body {
                 overflow: hidden;
                 border-radius: 20px;
 
-                .imagemCorte-container {
+                .imagemCorte-container,
+                .imagemTranca-container,
+                .imagemBarba-container,
+                .imagemDread-container,
+                .imagemSobrancelha-container {
                     position: relative;
                 }
 
