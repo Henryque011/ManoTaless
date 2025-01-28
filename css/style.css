@@ -814,16 +814,20 @@ body {
 
         .imgs_box {
             display: flex;
-            /* flex-wrap: wrap; */
-            /* gap: 10px; */
+            flex-wrap: wrap;
+            gap: 10px;
             justify-content: space-between;
 
             .imagem_container {
-                display: flex;
-                justify-content: space-between;
                 position: relative;
-                display: inline-block;
+                width: 300px;
+                height: 300px;
                 overflow: hidden;
+                border-radius: 20px;
+
+                .imagemCorte-container {
+                    position: relative;
+                }
 
                 .imagemCorte,
                 .imagemTranca,
@@ -852,16 +856,18 @@ body {
                     left: 50%;
                     transform: translate(-50%, -50%);
                     color: white;
-                    font-size: 16px;
+                    font-size: 22px;
                     font-weight: bold;
                     text-align: center;
                     opacity: 0;
                     transition: opacity 0.3s ease;
                     pointer-events: none;
+                    text-shadow: #7d1ecc 1px 1px;
                 }
 
-                .imagem-container:hover,
-                .texto-hover {
+                
+                .imagemCorte-container:hover .texto-hover,
+                .imagemTranca-container:hover .texto-hover{
                     opacity: 1;
                 }
             }
