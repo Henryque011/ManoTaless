@@ -814,16 +814,29 @@ body {
 
         .imgs_box {
             display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            justify-content: space-between;
+            /* flex-wrap: wrap;
+            gap: 10px; */
+            justify-content: center;
 
             .imagem_container {
                 position: relative;
                 width: 300px;
                 height: 300px;
-                overflow: hidden;
+                /* overflow: hidden; */
                 border-radius: 20px;
+                box-sizing: border-box;
+                /* display: flex;
+                justify-content: center;
+                align-items: center; */
+
+                .box_corte,
+                .box_tranca,
+                .box_barba,
+                .box_dread,
+                .box_sobrancelha {
+                    display: flex;
+                    /* justify-content: center; */
+                }
 
                 .imagemCorte-container,
                 .imagemTranca-container,
@@ -838,10 +851,11 @@ body {
                 .imagemBarba,
                 .imagemDread,
                 .imagemSobrancelha {
-                    width: 300px;
-                    height: 300px;
+                    width: 250px;
+                    height: 250px;
                     margin: 5px;
                     padding: 5px;
+                    object-fit: cover;
                     border-radius: 20px;
                     filter: 0.3s ease, transform 0.3s ease;
                 }
@@ -876,18 +890,18 @@ body {
                 .imagemSobrancelha-container:hover .texto-hover {
                     opacity: 1;
                 }
-            }
 
-            .imagemTranca,
-            .imagemCorte,
-            .imagemBarba,
-            .imagemDread,
-            .imagemSobrancelha {
-                display: none;
-            }
+                .imagemTranca,
+                .imagemCorte,
+                .imagemBarba,
+                .imagemDread,
+                .imagemSobrancelha {
+                    display: none;
+                }
 
-            .ativo {
-                display: block;
+                .ativo {
+                    display: block;
+                }
             }
         }
     }
