@@ -790,7 +790,7 @@ body {
     .box_estilos {
         width: 100%;
         max-width: 1200px; 
-      /*  margin: 0 auto;
+        /*  margin: 0 auto;
         display: flex;
         flex-direction: column; */
 
@@ -855,7 +855,7 @@ body {
                 .imagemBarba,
                 .imagemDread,
                 .imagemSobrancelha {
-                    width: 250px;
+                    /* width: 250px; */
                     /* height: 250px; */
                     margin: 5px;
                     padding: 5px;
@@ -863,14 +863,13 @@ body {
                     border-radius: 20px;
                     filter: 0.3s ease, transform 0.3s ease;
                     width: 100%;
-                    height: auto;
+                    /* height: auto; */
                     border-radius: 8px;
-                    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
                     transition: transform 0.3s ease;
                     display: none;
                 } 
 
-                /* img:hover {
+                 img:hover {
                     color: red;
                     transition: 0.5s ease;
                     transform: scale(1.1);
@@ -878,7 +877,7 @@ body {
                     transform: scale(1.05);
                 }
 
-                .texto-hover {
+              .texto-hover {
                     position: absolute;
                     top: 50%;
                     left: 50%;
@@ -893,7 +892,7 @@ body {
                     text-shadow: #7d1ecc 1px 1px;
                 }
 
-                .imagemCorte-container:hover .texto-hover,
+               /*   .imagemCorte-container:hover .texto-hover,
                 .imagemTranca-container:hover .texto-hover,
                 .imagemBarba-container:hover .texto-hover,
                 .imagemDread-container:hover .text-hover,
