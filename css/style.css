@@ -789,7 +789,7 @@ body {
 
     .box_estilos {
         width: 100%;
-        max-width: 1200px; 
+        max-width: 1200px;
         /*  margin: 0 auto;
         display: flex;
         flex-direction: column; */
@@ -827,91 +827,93 @@ body {
                 width: 300px;
                 height: 300px;
                 /* overflow: hidden; 
-                border-radius: 20px;
                 box-sizing: border-box;
                 display: flex;
                 justify-content: center;
                 align-items: center; */
 
-                .box_corte,
-                .box_tranca,
-                .box_barba,
-                .box_dread,
-                .box_sobrancelha {
-                    display: flex;
-                    justify-content: center; 
-                }
+        .box_corte,
+        .box_tranca,
+        .box_barba,
+        .box_dread,
+        .box_sobrancelha {
+            display: flex;
+            justify-content: space-between;
+        }
 
-                /* .imagemCorte-container, 
-                .imagemTranca-container,
-                .imagemBarba-container,
-                .imagemDread-container,
-                .imagemSobrancelha-container {
-                    position: relative;
-                } */
+        .imagemCorte-container,
+        .imagemTranca-container,
+        .imagemBarba-container,
+        .imagemDread-container,
+        .imagemSobrancelha-container {
+            position: relative;
+            height: auto;
+        }
 
-                .imagemCorte,
-                .imagemTranca,
-                .imagemBarba,
-                .imagemDread,
-                .imagemSobrancelha {
-                    /* width: 250px; */
-                    /* height: 250px; */
-                    margin: 5px;
-                    padding: 5px;
-                    object-fit: cover;
-                    border-radius: 20px;
-                    filter: 0.3s ease, transform 0.3s ease;
-                    width: 100%;
-                    /* height: auto; */
-                    border-radius: 8px;
-                    transition: transform 0.3s ease;
-                    display: none;
-                } 
+        .imagemCorte,
+        .imagemTranca,
+        .imagemBarba,
+        .imagemDread,
+        .imagemSobrancelha {
+            width: 250px;
+            height: 250px;
+            margin: 5px;
+            padding: 5px;
+            object-fit: cover;
+            border-radius: 20px;
+            filter: 0.3s ease, transform 0.3s ease;
+            /* width: 100%; */
+            border-radius: 20px;
 
-                 img:hover {
-                    color: red;
-                    transition: 0.5s ease;
-                    transform: scale(1.1);
-                    filter: brightness(0);
-                    transform: scale(1.05);
-                }
+            /* height: auto; */
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+            display: none;
+        }
 
-              .texto-hover {
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
-                    color: white;
-                    font-size: 22px;
-                    font-weight: bold;
-                    text-align: center;
-                    opacity: 0;
-                    transition: opacity 0.3s ease;
-                    pointer-events: none;
-                    text-shadow: #7d1ecc 1px 1px;
-                }
+        img:hover {
+            color: red;
+            transition: 0.5s ease;
+            transform: scale(1.1);
+            filter: brightness(0);
+            transform: scale(1.05);
+        }
 
-               /*   .imagemCorte-container:hover .texto-hover,
-                .imagemTranca-container:hover .texto-hover,
-                .imagemBarba-container:hover .texto-hover,
-                .imagemDread-container:hover .text-hover,
-                .imagemSobrancelha-container:hover .texto-hover {
-                    opacity: 1;
-                /* }  */
+        .texto-hover {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 22px;
+            font-weight: bold;
+            text-align: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            pointer-events: none;
+            text-shadow: #7d1ecc 1px 1px;
+        }
 
-                .imagemTranca,
-                .imagemCorte,
-                .imagemBarba,
-                .imagemDread,
-                .imagemSobrancelha {
-                    display: none;
-                }
+        .imagemCorte-container:hover .texto-hover,
+        .imagemTranca-container:hover .texto-hover,
+        .imagemBarba-container:hover .texto-hover,
+        .imagemDread-container:hover .text-hover,
+        .imagemSobrancelha-container:hover .texto-hover {
+            opacity: 1;
+        }
 
-                .ativo {
-                    display: block;
-                } 
-            }
+        .imagemTranca,
+        .imagemCorte,
+        .imagemBarba,
+        .imagemDread,
+        .imagemSobrancelha {
+            display: none;
+        }
+
+        .ativo {
+            display: block;
         }
     }
+}
+}
 }
