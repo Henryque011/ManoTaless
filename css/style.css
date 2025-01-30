@@ -792,6 +792,8 @@ body {
         max-width: 1200px;
 
         .button_estilos {
+            display: flex;
+
             button {
                 width: 250px;
                 height: 50px;
@@ -872,7 +874,7 @@ body {
         .imagemCorte-container:hover .texto-hover,
         .imagemTranca-container:hover .texto-hover,
         .imagemBarba-container:hover .texto-hover,
-        .imagemDread-container:hover .text-hover,
+        .imagemDread-container:hover .texto-hover,
         .imagemSobrancelha-container:hover .texto-hover {
             opacity: 1;
         }
