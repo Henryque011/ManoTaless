@@ -789,6 +789,10 @@ body {
 
     .box_estilos {
         width: 100%;
+        max-width: 1200px; 
+      /*  margin: 0 auto;
+        display: flex;
+        flex-direction: column; */
 
         .button_estilos {
             button {
@@ -812,20 +816,20 @@ body {
             }
         }
 
-        .imgs_box {
+        /* .imgs_box {
             display: flex;
-            /* flex-wrap: wrap;
-            gap: 10px; */
-            justify-content: center;
+            flex-direction: column;
+            gap: 20px; 
+            width: calc(33.33% - 20px);
 
             .imagem_container {
                 position: relative;
                 width: 300px;
                 height: 300px;
-                /* overflow: hidden; */
+                /* overflow: hidden; 
                 border-radius: 20px;
                 box-sizing: border-box;
-                /* display: flex;
+                display: flex;
                 justify-content: center;
                 align-items: center; */
 
@@ -835,16 +839,16 @@ body {
                 .box_dread,
                 .box_sobrancelha {
                     display: flex;
-                    /* justify-content: center; */
+                    justify-content: center; 
                 }
 
-                .imagemCorte-container,
+                /* .imagemCorte-container, 
                 .imagemTranca-container,
                 .imagemBarba-container,
                 .imagemDread-container,
                 .imagemSobrancelha-container {
                     position: relative;
-                }
+                } */
 
                 .imagemCorte,
                 .imagemTranca,
@@ -852,15 +856,21 @@ body {
                 .imagemDread,
                 .imagemSobrancelha {
                     width: 250px;
-                    height: 250px;
+                    /* height: 250px; */
                     margin: 5px;
                     padding: 5px;
                     object-fit: cover;
                     border-radius: 20px;
                     filter: 0.3s ease, transform 0.3s ease;
-                }
+                    width: 100%;
+                    height: auto;
+                    border-radius: 8px;
+                    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+                    transition: transform 0.3s ease;
+                    display: none;
+                } 
 
-                img:hover {
+                /* img:hover {
                     color: red;
                     transition: 0.5s ease;
                     transform: scale(1.1);
@@ -889,7 +899,7 @@ body {
                 .imagemDread-container:hover .text-hover,
                 .imagemSobrancelha-container:hover .texto-hover {
                     opacity: 1;
-                }
+                /* }  */
 
                 .imagemTranca,
                 .imagemCorte,
@@ -901,7 +911,7 @@ body {
 
                 .ativo {
                     display: block;
-                }
+                } 
             }
         }
     }
