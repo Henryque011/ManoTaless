@@ -118,7 +118,6 @@ body {
                     width: 190px;
                     height: 80px;
                     filter: drop-shadow(0 0 2rem red);
-                    /* box-shadow: 1px 1px 1rem darkorange; */
                 }
 
                 p {
@@ -948,10 +947,6 @@ body {
         height: 350px;
     }
 
-    .side {
-        /* height: 800px; */
-    }
-
     h2 {
         align-items: center;
         text-align: center;
@@ -998,6 +993,30 @@ body {
             border-radius: 20px;
             width: 320px;
             height: 420px;
+        }
+    }
+}
+
+.cantor {
+    h2 {
+        align-items: center;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: var(--font_goldman);
+        font-size: 18pt;
+        margin: 20px;
+        padding: 15px;
+    }
+
+    .redes_sociais {
+        margin: 20px;
+        display: flex;
+        justify-content: space-around;
+
+        a {
+            font-size: 31pt;
+            text-decoration: none;
+            color: var(--medium_purple);
         }
     }
 }
