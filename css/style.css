@@ -935,3 +935,69 @@ body {
         }
     }
 }
+
+.dancarino {
+    .banner {
+        background-image: url(../img/purpleground.jpg);
+        background-position: bottom;
+        background-size: cover;
+        background-attachment: fixed;
+        filter: brightness(75%);
+        box-shadow: inset 5px 5px 5px 5px black;
+        padding: 50px 0;
+        height: 350px;
+    }
+
+    .side {
+        /* height: 800px; */
+    }
+
+    h2 {
+        align-items: center;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: var(--font_goldman);
+        font-size: 18pt;
+        margin: 20px;
+        padding: 5px;
+    }
+
+    h3 {
+        display: flex;
+        justify-content: center;
+        color: var(--medium_purple);
+        font-family: var(--font_nosifer);
+        font-size: 14pt;
+        margin: 10px;
+    }
+
+    .sobre_danca {
+        p {
+            height: 200px;
+            /* padding: 15px; */
+            font-size: 14pt;
+            text-align: center;
+            align-items: center;
+            word-spacing: 2pt;
+            font-family: var(--font_poppins);
+        }
+
+        .sobre_carrosel {
+            color: var(--medium_purple);
+
+            h2 {
+                font-family: var(--font_nosifer);
+                font-size: 14pt;
+                word-spacing: 5px;
+            }
+        }
+    }
+
+    .danca_mp4 {
+        img {
+            border-radius: 20px;
+            width: 320px;
+            height: 420px;
+        }
+    }
+}
