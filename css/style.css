@@ -973,6 +973,7 @@ body {
 
     .sobre_danca {
         p {
+            padding: 10px;
             margin: 20px;
             font-size: 14pt;
             text-align: center;
