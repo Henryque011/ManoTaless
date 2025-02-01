@@ -1036,3 +1036,59 @@ body {
         }
     }
 }
+
+.contato_email {
+    .box_contato {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    label {
+        font-size: 14pt;
+        font-weight: 500;
+        text-align: center;
+        align-items: center;
+        word-spacing: 2pt;
+        text-transform: uppercase;
+        font-family: var(--font_poppins);
+    }
+
+    input {
+        width: 400px;
+        height: 50px;
+        align-items: center;
+        text-align: center;
+        border-radius: 20px;
+        margin: 5px;
+    }
+
+    textarea {
+        width: 1200px;
+        height: 200px;
+        border-radius: 10px;
+        margin: 5px;
+        resize: none;
+    }
+
+    .box_mensagem {
+        align-items: center;
+        text-align: center;
+
+        label {
+            display: flex;
+            text-align: center;
+            align-items: center;
+        }
+
+        input {
+            width: 400px;
+            height: 50px;
+            align-items: center;
+            text-align: center;
+            border-radius: 20px;
+            margin: 5px;
+        }
+
+    }
+}
