@@ -1045,10 +1045,8 @@ body {
     }
 
     label {
-        font-size: 14pt;
+        font-size: 16pt;
         font-weight: 500;
-        text-align: center;
-        align-items: center;
         word-spacing: 2pt;
         text-transform: uppercase;
         font-family: var(--font_poppins);
@@ -1056,10 +1054,11 @@ body {
 
     input {
         width: 400px;
-        height: 50px;
+        height: 80px;
         border-radius: 20px;
         margin: 5px;
         border: none;
+        font-size: 14pt;
     }
 
     textarea {
@@ -1069,6 +1068,8 @@ body {
         margin: 5px;
         resize: none;
         border: none;
+        font-size: 14pt;
+        background-color: var(--body-color);
     }
 
     #placeholder-text::placeholder {
@@ -1092,7 +1093,30 @@ body {
             text-align: center;
             border-radius: 20px;
             margin: 5px;
+            font-family: var(--font_poppins);
+            background: var(--medium_purple);
+            color: white;
+            text-transform: uppercase;
+            font-weight: bold;
         }
+
+        .btn_contato {
+            font-size: 14pt;
+            font-weight: 600;
+            text-align: center;
+            align-items: center;
+            word-spacing: 2pt;
+            text-transform: uppercase;
+
+
+            :hover {
+                background-color: var(--strong_purple);
+                transition: 0.5s;
+            }
+
+
+        }
+
 
     }
 }
