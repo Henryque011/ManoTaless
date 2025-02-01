@@ -1058,7 +1058,7 @@ body {
         border-radius: 20px;
         margin: 5px;
         border: none;
-        font-size: 14pt;
+        font-size: 18pt;
     }
 
     textarea {
@@ -1068,8 +1068,8 @@ body {
         margin: 5px;
         resize: none;
         border: none;
-        font-size: 14pt;
-        background-color: var(--body-color);
+        font-size: 18pt;
+        background-color: ;
     }
 
     #placeholder-text::placeholder {
