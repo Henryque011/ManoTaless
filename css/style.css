@@ -1072,8 +1072,7 @@ body {
     }
 
     #placeholder-text::placeholder {
-        color: red;
-        font-size: ;
+        text-transform: uppercase;
     }
 
     .box_mensagem {
