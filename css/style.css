@@ -1020,3 +1020,19 @@ body {
         }
     }
 }
+
+/* pag contato */
+
+.redes {
+    .redes_sociais {
+        margin: 20px;
+        display: flex;
+        justify-content: space-around;
+
+        a {
+            font-size: 31pt;
+            text-decoration: none;
+            color: var(--medium_purple);
+        }
+    }
+}
