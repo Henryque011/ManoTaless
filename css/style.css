@@ -1069,7 +1069,6 @@ body {
         resize: none;
         border: none;
         font-size: 20pt;
-        background-color: ;
     }
 
     #placeholder-text::placeholder {
@@ -1108,15 +1107,10 @@ body {
             word-spacing: 2pt;
             text-transform: uppercase;
 
-
             :hover {
                 background-color: var(--strong_purple);
                 transition: 0.5s;
             }
-
-
         }
-
-
     }
 }
