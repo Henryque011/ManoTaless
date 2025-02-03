@@ -16,12 +16,12 @@ try {
 
         $phpmail = new PHPMailer\PHPMailer\PHPMailer();
         $phpmail->isSMTP();
-        $phpmail->SMTPDebug = 0;
+        $phpmail->SMTPDebug = 2;
 
         $phpmail->Host = "smtp.gmail.com";
-        $phpmail->port = 465;
+        $phpmail->port = 587;
 
-        $phpmail->STMPSecure = 'ssl';
+        $phpmail->STMPSecure = 'tls';
         $phpmail->SMTPAuth = true;
 
         $phpmail->Username = "henryquenonatosilva@gmail.com";
@@ -77,5 +77,5 @@ try {
         (11)9999-6666";
         $phpmailResposta->send();
     }
-} catch (Execption $e) {
+} catch (Exception $e) {
 }
