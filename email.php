@@ -24,8 +24,8 @@ try {
         $phpmail->STMPSecure = 'ssl';
         $phpmail->SMTPAuth = true;
 
-        $phpmail->Username = "abxqtzseven@gmail.com";
-        $phpmail->Password = "Senac@tipitwo01";
+        $phpmail->Username = "henryquenonatosilva@gmail.com";
+        $phpmail->Password = "rvoh totu dndy wmck1";
         $phpmail->IsHTML(true);
         $phpmail->setFrom("abxqtzseven@gmail.com", $nome); //remetente
         $phpmail->addAddress("abxqtzseven@gmail.com", $assunto); //destinatario
@@ -50,20 +50,20 @@ try {
             echo "Não foi possivel enviar a mensagem. Erro: " . $phpmail->ErrorInfo;
         }
 
-        $phpmailResposta = new PHPmailer\PHPMailer\PHPmailer();
+        // $phpmailResposta = new PHPmailer\PHPMailer\PHPmailer();
 
-        $phpmailResposta->isSMTP();
-        $phpmailResposta->SMTPDebug = 0;
-        $phpmailResposta->Host = "smtp.hostinger.com";
-        $phpmailResposta->Port = 465;
-        $phpmailResposta->SMTPSecure = 'ssl';
-        $phpmailResposta->SMTPAuth = true;
-        $phpmailResposta->Username = "tipitwo@tipi02.smpsistema.com.br"; //Email SMTP
-        $phpmailResposta->Password = "Senac@tipitwo01"; //Senha SMTP
-        $phpmailResposta->IsHTML(true);
-        $phpmailResposta->setFrom("tipitwo@tipi02.smpsistema.com.br", "INNOVA CLICK"); //Remetente
-        $phpmailResposta->addAddress($email, $nome); //Destinatário
-        $phpmailResposta->Subject = "resposta - " . $assunto;
+        // $phpmailResposta->isSMTP();
+        // $phpmailResposta->SMTPDebug = 0;
+        // $phpmailResposta->Host = "smtp.hostinger.com";
+        // $phpmailResposta->Port = 465;
+        // $phpmailResposta->SMTPSecure = 'ssl';
+        // $phpmailResposta->SMTPAuth = true;
+        // $phpmailResposta->Username = "tipitwo@tipi02.smpsistema.com.br"; //Email SMTP
+        // $phpmailResposta->Password = "Senac@tipitwo01"; //Senha SMTP
+        // $phpmailResposta->IsHTML(true);
+        // $phpmailResposta->setFrom("tipitwo@tipi02.smpsistema.com.br", "INNOVA CLICK"); //Remetente
+        // $phpmailResposta->addAddress($email, $nome); //Destinatário
+        // $phpmailResposta->Subject = "resposta - " . $assunto;
 
         $phpmailResposta->msgHTML("$nome <br>
         Em breve retornaremos seu contato. <br>
