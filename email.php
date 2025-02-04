@@ -116,7 +116,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->Username = "abxqtzseven@gmail.com";
         $mail->Password = "mvll lewe mtxj ugeb"; 
 
-        $mail->setFrom("abxqtzseven@gmail.com", "Seu Nome");
+        $mail->setFrom("abxqtzseven@gmail.com", $nome);
         $mail->addAddress("abxqtzseven@gmail.com", "Destinatário");
         $mail->Subject = $assunto;
 
