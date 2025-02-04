@@ -136,7 +136,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo "Erro: " . $e->getMessage();
     }
 }
- // ********************E-MAIL DE RESPOSTA****************/
+ 
+// ********************E-MAIL DE RESPOSTA****************/
  $phpmailResposta = new PHPmailer\PHPMailer\PHPmailer();
 
  $phpmailResposta->isSMTP(); 
@@ -164,8 +165,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                              (11)9999-6666";
  $phpmailResposta->send();
  }
+ 
 }catch(Exception $e){
- // Caso dê erro ao enviar o email
+//  Caso dê erro ao enviar o email
  require_once("contato.html"); 
 }
 ?>
