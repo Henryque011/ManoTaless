@@ -117,7 +117,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->Password = "mvll lewe mtxj ugeb"; 
 
         $mail->setFrom("abxqtzseven@gmail.com", $nome);
-        $mail->addAddress("abxqtzseven@gmail.com", "Destinatário");
+        $mail->addAddress("abxqtzseven@gmail.com", $assunto);
         $mail->Subject = $assunto;
 
         $mail->isHTML(true);
@@ -126,6 +126,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         if ($mail->send()) {
             echo "Mensagem enviada com sucesso!";
+            require_once("contato.html");
         } else {
             throw new Exception("Erro ao enviar: " . $mail->ErrorInfo);
         }
