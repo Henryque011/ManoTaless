@@ -84,7 +84,6 @@ try {
 }  -->
 
 <?php
-
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
@@ -101,8 +100,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $assunto  = "Contato via site";
 
         if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-            throw new Exception("Email inválido!");
             require_once("contato.html");
+            throw new Exception("Email inválido!");
         }
 
         $mail = new PHPMailer(true);
@@ -113,9 +112,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->SMTPSecure = 'tls';
         $mail->SMTPAuth = true;
 
-        
         $mail->Username = "abxqtzseven@gmail.com";
-        $mail->Password = "mvll lewe mtxj ugeb"; 
+        $mail->Password = "mvll lewe mtxj ugeb";
 
         $mail->setFrom("abxqtzseven@gmail.com", $nome);
         $mail->addAddress("abxqtzseven@gmail.com", $assunto);
@@ -125,50 +123,50 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->Body = "Nome: $nome <br>Email: $email <br>Telefone: $telefone <br>Mensagem: $mensagem";
         $mail->AltBody = "Nome: $nome \nEmail: $email \nTelefone: $telefone \nMensagem: $mensagem";
 
-        if ($mail->send()) {
-            echo "Mensagem enviada com sucesso!";
-            require_once("contato.html");
-        } else {
+        if (!$mail->send()) {
             throw new Exception("Erro ao enviar: " . $mail->ErrorInfo);
-            require_once("contato.html");
         }
+
+        // ********************E-MAIL DE RESPOSTA****************/
+        $phpmailResposta = new PHPMailer(true);
+
+        $phpmailResposta->isSMTP();
+        $phpmailResposta->SMTPDebug = 0;
+        $phpmailResposta->Host = "smtp.gmail.com";
+        $phpmailResposta->Port = 587;
+        $phpmailResposta->SMTPSecure = 'tls';
+        $phpmailResposta->SMTPAuth = true;
+        $phpmailResposta->Username = "abxqtzseven@gmail.com";
+        $phpmailResposta->Password = "mvll lewe mtxj ugeb";
+
+        $phpmailResposta->IsHTML(true);
+        $phpmailResposta->setFrom("abxqtzseven@gmail.com", "INNOVA CLICK");
+        $phpmailResposta->addAddress($email, $nome);
+        $phpmailResposta->Subject = "Resposta - " . $assunto;
+
+        $phpmailResposta->msgHTML("$nome <br>
+                                   Em breve retornaremos seu contato. <br>
+                                   Mensagem: $mensagem <br>
+                                   Em caso de dúvidas entre em contato pelo número <br>
+                                   (11) 9999-6666");
+
+        $phpmailResposta->AltBody = "$nome \n
+                                     Em breve retornaremos seu contato. \n
+                                     Mensagem: $mensagem \n
+                                     Em caso de dúvidas entre em contato pelo número \n
+                                     (11) 9999-6666";
+
+        if (!$phpmailResposta->send()) {
+            throw new Exception("Erro ao enviar email de resposta: " . $phpmailResposta->ErrorInfo);
+        }
+
+        echo "Mensagem enviada com sucesso!";
+        require_once("contato.html");
+
     } catch (Exception $e) {
         echo "Erro: " . $e->getMessage();
     }
 }
- 
-// ********************E-MAIL DE RESPOSTA****************/
- $phpmailResposta = new PHPmailer\PHPMailer\PHPmailer();
-
- $phpmailResposta->isSMTP(); 
- $phpmailResposta->SMTPDebug = 0;
- $phpmailResposta->Host = "smtp.gmail.com;
- $phpmailResposta->Port = 587;
- $phpmailResposta->SMTPSecure = 'ssl';
- $phpmailResposta->SMTPAuth = true;
- $phpmailResposta->Username = "abxqtzseven@gmail.com"; //Email SMTP
- $phpmailResposta->Password = "mvll lewe mtxj ugeb"; //Senha SMTP
- $phpmailResposta->IsHTML(true);
- $phpmailResposta->setFrom("abxqtzseven@gmail.com", "INNOVA CLICK"); //Remetente
- $phpmailResposta->addAddress($email, $nome); //Destinatário
- $phpmailResposta->Subject = "resposta - ". $assunto;
-
- $phpmailResposta->msgHTML("$nome <br>
-                             Em breve retornaremos seu contato. <br>
-                             Mensagem: $mensagem <br>
-                             Emcaso de dúvidas entre em contato pelo número <br>
-                             (11)9999-6666");
- $phpmailResposta->AltBody="$nome \n
-                             Em breve retornaremos seu contato. \n
-                             Mensagem: $mensagem \n
-                             Emcaso de dúvidas entre em contato pelo número \n
-                             (11)9999-6666";
- $phpmailResposta->send();
- }
- 
-}catch(Exception $e){
-//  Caso dê erro ao enviar o email
- require_once("contato.html"); 
-}
 ?>
+
 
