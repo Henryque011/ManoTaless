@@ -56,25 +56,25 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $phpmailResposta->Password = "mvll lewe mtxj ugeb";
 
         $phpmailResposta->IsHTML(true);
-        $phpmailResposta->setFrom("abxqtzseven@gmail.com", "Mano Taless");
+        $phpmailResposta->setFrom($email, "Mano Taless");
         $phpmailResposta->addAddress($email, $nome);
         $phpmailResposta->Subject = "Resposta - " . $assunto;
 
         $phpmailResposta->msgHTML("$nome <br>
-                                    -------------------------------------- <br>
+                                    ------------------------------------------------------------------------------------------------------------------- <br>
                                     Em breve retornaremos seu contato! <br>
-                                    --------------------------------------- <br>
+                                    ------------------------------------------------------------------------------------------------------------------- <br>
                                     Sua mensagem: $mensagem <br>
-                                    --------------------------------------- <br>
+                                    ------------------------------------------------------------------------------------------------------------------- <br>
                                     Em caso de dúvidas, entre em contato pelo número <br>
                                     (11)970428582 ");
 
         $phpmailResposta->AltBody = "$nome \n
-                                        --------------------------------------- \n
+                                        ------------------------------------------------------------------------------------------------------------------- \n
                                         Em breve retornaremos seu contato! \n
-                                        --------------------------------------- \n
+                                        ------------------------------------------------------------------------------------------------------------------- \n
                                         Sua mensagem: $mensagem \n
-                                        --------------------------------------- \n
+                                        ------------------------------------------------------------------------------------------------------------------- \n
                                         Em caso de dúvidas entre em contato pelo número \n
                                         (11)970428582 ";
 
