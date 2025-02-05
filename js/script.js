@@ -95,3 +95,4 @@ document.addEventListener('DOMContentLoaded', function () {
         imagensSobrancelha.forEach(imagem => imagem.classList.add('ativo'));
     })
 });
+
