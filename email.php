@@ -82,7 +82,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             throw new Exception("Erro ao enviar email de resposta: " . $phpmailResposta->ErrorInfo);
         }
 
-        echo "Mensagem enviada com sucesso!";
+        // echo "Mensagem enviada com sucesso!";
         require_once("contato.html");
     } catch (Exception $e) {
         echo "Erro: " . $e->getMessage();
