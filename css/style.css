@@ -440,7 +440,7 @@ body {
             }
 
             .box_video {
-                width: 100%;
+                width: 400px;
                 position: relative;
 
                 div {
@@ -450,6 +450,7 @@ body {
                     border-radius: 20px;
 
                     video {
+                        width:400px;
                         align-items: center;
                         text-align: center;
                     }
