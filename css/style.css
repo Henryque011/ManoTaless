@@ -970,8 +970,11 @@ body {
 
     .side {
         height: 600px;
+        justify-content: space-between;
 
         .sobre_danca {
+            width: 600px;
+
             p {
                 padding: 10px;
                 margin: 20px;
@@ -994,12 +997,11 @@ body {
         }
 
         .danca_mp4 {
-            width: 400px;
-            height: 100px;
+            width: 350px;
 
             video {
                 border-radius: 20px;
-                width: 400px;
+                width: 300px;
                 align-items: center;
                 text-align: center;
                 border-radius: 20px;
@@ -1015,8 +1017,8 @@ body {
         text-transform: uppercase;
         font-family: var(--font_goldman);
         font-size: 18pt;
-        margin: 20px;
-        padding: 15px;
+        margin: 40px;
+        padding: 5px;
     }
 
     .redes_sociais {
