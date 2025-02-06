@@ -450,7 +450,7 @@ body {
                     border-radius: 20px;
 
                     video {
-                        width:400px;
+                        width: 400px;
                         align-items: center;
                         text-align: center;
                     }
@@ -968,33 +968,42 @@ body {
         margin: 10px;
     }
 
-    .sobre_danca {
-        p {
-            padding: 10px;
-            margin: 20px;
-            font-size: 14pt;
-            text-align: center;
-            align-items: center;
-            word-spacing: 2pt;
-            font-family: var(--font_poppins);
-        }
+    .side {
+        height: 600px;
 
-        .sobre_carrosel {
-            color: var(--medium_purple);
-
-            h2 {
-                font-family: var(--font_nosifer);
+        .sobre_danca {
+            p {
+                padding: 10px;
+                margin: 20px;
                 font-size: 14pt;
-                word-spacing: 5px;
+                text-align: center;
+                align-items: center;
+                word-spacing: 2pt;
+                font-family: var(--font_poppins);
+            }
+
+            .sobre_carrosel {
+                color: var(--medium_purple);
+
+                h2 {
+                    font-family: var(--font_nosifer);
+                    font-size: 14pt;
+                    word-spacing: 5px;
+                }
             }
         }
-    }
 
-    .danca_mp4 {
-        img {
-            border-radius: 20px;
-            width: 320px;
-            height: 420px;
+        .danca_mp4 {
+            width: 400px;
+            height: 100px;
+
+            video {
+                border-radius: 20px;
+                width: 400px;
+                align-items: center;
+                text-align: center;
+                border-radius: 20px;
+            }
         }
     }
 }
@@ -1114,5 +1123,5 @@ body {
                 transition: 0.5s;
             }
         }
-    } 
+    }
 }
