@@ -84,7 +84,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $msg = "Mensagem enviada com sucesso!";
         $status = "sucesso";
         
-        // require_once("contato.php");
+        require_once("contato.php");
     } catch (Exception $e) {
         $msg = "Erro: " . $e->getMessage();
         $status = "erro";
