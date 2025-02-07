@@ -9,7 +9,7 @@
                 <h3>outras páginas</h3>
                 <a href="index.php">home</a>
                 <a href="servicos.php">serviços</a>
-                <a href="contato.html">contato</a>
+                <a href="contato.php">contato</a>
             </div>
             <div>
                 <h3>redes socias e localização</h3>
