@@ -8,7 +8,7 @@
             <div>
                 <h3>outras páginas</h3>
                 <a href="index.php">home</a>
-                <a href="servicos.html">serviços</a>
+                <a href="servicos.php">serviços</a>
                 <a href="contato.html">contato</a>
             </div>
             <div>
