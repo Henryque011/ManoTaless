@@ -4,9 +4,9 @@
             <?php
             if (isset($msg) && isset($status)) {
                 if ($status == 'sucesso') {
-                    echo '<div class="alerta-sucesso"> ' . $mensagem . '</div>';
+                    echo '<div class="alerta-sucesso"> ' . $msg . '</div>';
                 } elseif ($status == 'erro') {
-                    echo '<div class="alerta-erro"> ' . $mensagem . '</div>';
+                    echo '<div class="alerta-erro"> ' . $msg . '</div>';
                 }
             }
             ?>
