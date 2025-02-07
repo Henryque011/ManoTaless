@@ -1,6 +1,15 @@
 <section class="contato_email">
     <article class="site">
         <form action="email.php" method="POST">
+            <?php
+            if (isset($msg) && isset($status)) {
+                if ($status == 'sucesso') {
+                    echo '<div class="alerta-sucesso"> ' . $mensagem . '</div>';
+                } elseif ($status == 'erro') {
+                    echo '<div class="alerta-erro"> ' . $mensagem . '</div>';
+                }
+            }
+            ?>
             <div class="box_contato">
                 <div>
                     <label for="nome">Nome:</label>
