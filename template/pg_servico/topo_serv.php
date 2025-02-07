@@ -8,7 +8,7 @@
                 <ul>
                     <li><a href="index.php">Home</a></li>
                     <li><a class="active" href="servicos.php">Serviços</a></li>
-                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="contato.php">Contato</a></li>
                 </ul>
             </nav>
             <div class="menu" id="menu-toggle">
