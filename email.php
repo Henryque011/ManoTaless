@@ -16,8 +16,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $assunto  = "Mano Taless";
 
         if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-            require_once("contato.html");
             throw new Exception("Email inválido!");
+            require_once("contato.php");
         }
 
         $mail = new PHPMailer(true);
@@ -83,7 +83,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
         $msg = "Mensagem enviada com sucesso!";
         $status = "sucesso";
-        
+
         require_once("contato.php");
     } catch (Exception $e) {
         $msg = "Erro: " . $e->getMessage();
