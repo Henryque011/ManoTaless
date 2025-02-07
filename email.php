@@ -17,7 +17,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
             throw new Exception("Email inválido!");
-            require_once("contato.php");
+            // require_once("contato.php");
         }
 
         $mail = new PHPMailer(true);
@@ -81,12 +81,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if (!$phpmailResposta->send()) {
             throw new Exception("Erro ao enviar email de resposta: " . $phpmailResposta->ErrorInfo);
         }
-        $msg = "Mensagem enviada com sucesso!";
-        $status = "sucesso";
-
-        require_once("contato.php");
+        $_SESSION['msg'] = "Mensagem enviada com sucesso!";
+        $_SESSION['status'] = "sucesso";
     } catch (Exception $e) {
-        $msg = "Erro: " . $e->getMessage();
-        $status = "erro";
+        $_SESSION['msg'] = "Erro: " . $e->getMessage();
+        $_SESSION['status'] = "erro";
     }
+
+    // Redirecionar para o formulário
+    // header("Location: contato.php");
+    // exit;
 }
