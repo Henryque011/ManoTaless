@@ -22,23 +22,23 @@
                 <button><a href="contato.html">entre em contato</a></button>
             </div>
             <div class="box_video">
-                <div><video width="400px" controls>
+                <div><video width="100%" controls>
                         <source src="video/video1.mp4" type="video/mp4">
                     </video>
                 </div>
-                <div><video width="400px" controls>
+                <div><video width="100%" controls>
                         <source src="video/video1.mp4" type="video/mp4">
                     </video>
                 </div>
-                <div><video width="400px" controls>
+                <div><video width="100%" controls>
                         <source src="video/video1.mp4" type="video/mp4">
                     </video>
                 </div>
-                <div><video width="400px" controls>
+                <div><video width="100%" controls>
                         <source src="video/video1.mp4" type="video/mp4">
                     </video>
                 </div>
-                <div><video width="400px" controls>
+                <div><video width="100%" controls>
                         <source src="video/video1.mp4" type="video/mp4">
                     </video>
                 </div>
