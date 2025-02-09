@@ -441,7 +441,7 @@ body {
             }
 
             .box_video {
-                width: 400px;
+                width: 450px;
                 position: relative;
 
                 div {
@@ -998,11 +998,11 @@ body {
         }
 
         .danca_mp4 {
-            width: 350px;
+            /* width: 350px; */
 
             video {
-                border-radius: 20px;
-                width: 300px;
+                border-radius: 40px;
+                width: 100%;
                 align-items: center;
                 text-align: center;
                 border-radius: 20px;
