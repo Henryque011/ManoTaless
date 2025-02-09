@@ -441,7 +441,7 @@ body {
             }
 
             .box_video {
-                width: 450px;
+                /* width: 450px; */
                 position: relative;
 
                 div {
