@@ -974,7 +974,7 @@ body {
         justify-content: space-between;
 
         .sobre_danca {
-            width: 600px;
+            /* width: 65%; */
 
             p {
                 padding: 10px;
