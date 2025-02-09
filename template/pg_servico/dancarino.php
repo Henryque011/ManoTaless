@@ -5,7 +5,7 @@
         <h2>Meus trabalhos</h2>
         <h3>dançarino</h3>
         <div class="side">
-            <div class="sobre_danca">
+            <div class="sobre_danca" style="width: 60%;">
                 <h2>dançarino oficial da <span style="color: #7d1ecc;"> dj tha4ys </span></h2>
                 <p>Lorem ipsum dolor sit, amet consectetur <span style="color: #7d1ecc;"> adipisicing
                     </span> Deserunt, corrupti
