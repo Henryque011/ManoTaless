@@ -22,7 +22,15 @@
                 <button><a href="contato.html">entre em contato</a></button>
             </div>
             <div class="box_video">
-                <div><video width="100%" controls>
+                <div><video width="100%" controls style="width: 325px; border-radius: 20px;">
+                        <source src="video/video1.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div><video width="100%" controls style="width: 325px; border-radius: 20px;">
+                        <source src="video/video1.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <!-- <div><video width="100%" controls> 
                         <source src="video/video1.mp4" type="video/mp4">
                     </video>
                 </div>
@@ -33,15 +41,7 @@
                 <div><video width="100%" controls>
                         <source src="video/video1.mp4" type="video/mp4">
                     </video>
-                </div>
-                <div><video width="100%" controls>
-                        <source src="video/video1.mp4" type="video/mp4">
-                    </video>
-                </div>
-                <div><video width="100%" controls>
-                        <source src="video/video1.mp4" type="video/mp4">
-                    </video>
-                </div>
+                </div> -->
             </div>
         </div>
     </article>
