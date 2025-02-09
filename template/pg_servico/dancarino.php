@@ -48,10 +48,11 @@
                 </div>
             </div>
             <div class="danca_mp4">
-                <video width="400px" controls>
+                <video width="255px" controls style="border-radius: 40px;">
                     <source src="video/video1.mp4" type="video/mp4">
                 </video>
             </div>
         </div>
+        <div class="space"></div>
     </article>
 </section>
