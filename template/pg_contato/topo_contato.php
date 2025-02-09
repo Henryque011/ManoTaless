@@ -15,7 +15,7 @@
                 <i class="fa-solid fa-bars"></i>
             </div>
             <div class="menu-lateral" id="menu-lateral">
-                <button class="btn-sair"><i class="fa-solid fa-arrow-left"></i>Sair</button>
+                <button class="btn-sair" style="background: none;"><i class="fa-solid fa-arrow-left"></i>Sair</button>
                 <ul>
                     <li><img src="img/logo.svg" alt="Logo mano taless"></li>
                     <li style="display: flex;justify-content: space-between;">
