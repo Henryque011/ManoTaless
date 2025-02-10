@@ -56,7 +56,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $phpmailResposta->Password = "mvll lewe mtxj ugeb";
 
         $phpmailResposta->IsHTML(true);
-        $phpmailResposta->setFrom($email, "Mano Taless");
+        $phpmailResposta->setFrom("abxqtzseven@gmail.com", "Mano Taless");
         $phpmailResposta->addAddress($email, $nome);
         $phpmailResposta->Subject = "Resposta - " . $assunto;
 
