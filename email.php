@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
@@ -89,6 +89,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     // Redirecionar para o formulário
-    // header("Location: contato.php");
-    // exit;
+    header("Location: contato.php");
+    exit;
 }
