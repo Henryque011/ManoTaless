@@ -86,7 +86,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $_SESSION['status'] = "sucesso";
     } catch (Exception $e) {
         $_SESSION['msg']    = "Erro: " . $e->getMessage();
-        $_SESSION['status'] = "erro";
+        $_SESSION['status'] = "Erro";
     }
 
     // Redirecionar para o formulário
