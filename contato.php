@@ -1,3 +1,6 @@
+<?php
+session_start(); // Inicia a sessão antes de qualquer saída
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
