@@ -1,5 +1,6 @@
 <?php
 session_start();
+
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
@@ -81,10 +82,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if (!$phpmailResposta->send()) {
             throw new Exception("Erro ao enviar email de resposta: " . $phpmailResposta->ErrorInfo);
         }
-        $_SESSION['msg'] = "Mensagem enviada com sucesso!";
+        $_SESSION['msg']    = "Mensagem enviada com sucesso!";
         $_SESSION['status'] = "sucesso";
     } catch (Exception $e) {
-        $_SESSION['msg'] = "Erro: " . $e->getMessage();
+        $_SESSION['msg']    = "Erro: " . $e->getMessage();
         $_SESSION['status'] = "erro";
     }
 
