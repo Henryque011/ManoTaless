@@ -1,19 +1,23 @@
-<?php
-// Verifica se a sessão já foi iniciada antes de acessar $_SESSION
-$msg = isset($_SESSION['msg']) ? $_SESSION['msg'] : '';
-$status = isset($_SESSION['status']) ? $_SESSION['status'] : '';
-
-// Limpa as mensagens após carregá-las
-?>
 <section class="contato_email">
     <article class="site">
-        <?php if (isset($_SESSION['msg'])) : ?>
-            <div class="alerta <?= $_SESSION['status'] === 'sucesso' ? 'alerta-sucesso' : 'alerta-erro' ?>">
-                <?= $_SESSION['msg']; ?>
-            </div>
-            <?php unset($_SESSION['msg'], $_SESSION['status']); ?>
-        <?php endif; ?>
+        <!-- <div class="alert alert-success" role="alert">
+            A simple success alert—check it out!
+        </div>
+        <div class="alert alert-danger" role="alert">
+            A simple danger alert—check it out!
+        </div> -->
         <form action="email.php" method="POST">
+            <?php
+            if (isset($_SESSION['msg']) && isset($_SESSION['status'])) {
+                if ($_SESSION['status'] == "sucesso") {
+                    echo '<div class="alert alert-success" role="alert">' . $_SESSION['msg'] . '</div>';
+                } else {
+                    echo '<div class="alert alert-danger" role="alert">' . $_SESSION['msg'] . '</div>';
+                }
+                // Remove a mensagem da sessão após exibição
+                unset($_SESSION['msg'], $_SESSION['status']);
+            }
+            ?>
             <div class="box_contato">
                 <div>
                     <label for="nome">Nome:</label>
