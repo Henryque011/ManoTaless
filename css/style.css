@@ -149,11 +149,6 @@ body {
                     }
                 }
 
-                .redes_sociais:hover {
-                    transition: 0.5s ease;
-                    transform: scale(1.09);
-                }
-
                 .fa-phone {
                     margin: 10px;
                     height: 20px;
@@ -448,6 +443,11 @@ body {
                     text-decoration: none;
                     color: var(--medium_purple);
                 }
+
+                :hover {
+                    transition: 0.5s ease;
+                    transform: scale(1.09);
+                }
             }
 
             .box_video {
@@ -592,6 +592,11 @@ body {
                     font-size: 31pt;
                     text-decoration: none;
                     color: white;
+                }
+
+                :hover {
+                    transition: 0.5s ease;
+                    transform: scale(1.09);
                 }
             }
         }
@@ -1042,6 +1047,11 @@ body {
             text-decoration: none;
             color: var(--medium_purple);
         }
+
+        :hover {
+            transition: 0.5s ease;
+            transform: scale(1.09);
+        }
     }
 }
 
@@ -1057,6 +1067,11 @@ body {
             font-size: 31pt;
             text-decoration: none;
             color: var(--medium_purple);
+        }
+
+        :hover {
+            transition: 0.5s ease;
+            transform: scale(1.09);
         }
     }
 }
