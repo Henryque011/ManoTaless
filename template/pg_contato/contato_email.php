@@ -1,14 +1,14 @@
-<!-- <?php
+<?php
 // Verifica se a sessão já foi iniciada antes de acessar $_SESSION
 $msg = isset($_SESSION['msg']) ? $_SESSION['msg'] : '';
 $status = isset($_SESSION['status']) ? $_SESSION['status'] : '';
 
 // Limpa as mensagens após carregá-las
-?> -->
+?>
 <section class="contato_email">
     <article class="site">
         <?php if (isset($_SESSION['msg'])) : ?>
-            <div class="<?= $_SESSION['status'] === 'sucesso' ? 'alerta-sucesso' : 'alerta-erro' ?>">
+            <div class="alerta <?= $_SESSION['status'] === 'sucesso' ? 'alerta-sucesso' : 'alerta-erro' ?>">
                 <?= $_SESSION['msg']; ?>
             </div>
             <?php unset($_SESSION['msg'], $_SESSION['status']); ?>
