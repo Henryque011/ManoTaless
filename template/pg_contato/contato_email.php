@@ -8,7 +8,6 @@
                 } else {
                     echo '<div class="alert alert-danger custom-danger" role="alert">' . $_SESSION['msg'] . '</div>';
                 }
-                // Remove a mensagem da sessão após exibição
                 unset($_SESSION['msg'], $_SESSION['status']);
             }
             ?>
