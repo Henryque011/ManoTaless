@@ -1,18 +1,12 @@
 <section class="contato_email">
     <article class="site">
-        <!-- <div class="alert alert-success" role="alert">
-            A simple success alert—check it out!
-        </div>
-        <div class="alert alert-danger" role="alert">
-            A simple danger alert—check it out!
-        </div> -->
         <form action="email.php" method="POST">
             <?php
             if (isset($_SESSION['msg']) && isset($_SESSION['status'])) {
                 if ($_SESSION['status'] == "sucesso") {
-                    echo '<div class="alert alert-success" role="alert">' . $_SESSION['msg'] . '</div>';
+                    echo '<div class="alert alert-success custom-sucess" role="alert">' . $_SESSION['msg'] . '</div>';
                 } else {
-                    echo '<div class="alert alert-danger" role="alert">' . $_SESSION['msg'] . '</div>';
+                    echo '<div class="alert alert-danger custom-danger" role="alert">' . $_SESSION['msg'] . '</div>';
                 }
                 // Remove a mensagem da sessão após exibição
                 unset($_SESSION['msg'], $_SESSION['status']);
