@@ -30,6 +30,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             throw new Exception("Email inválido!");
             // require_once("contato.php");
         }
+        $maxLength = 500; 
+        if (mb_strlen($mensagem, 'UTF-8') > $maxLength) {
+            throw new Exception("A mensagem deve conter no máximo {$maxLength} caracteres.");
+        }
 
         $mail = new PHPMailer(true);
         $mail->isSMTP();
