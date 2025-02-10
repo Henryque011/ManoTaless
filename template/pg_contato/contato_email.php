@@ -1,15 +1,24 @@
+<?php
+// Verifica se a sessão já foi iniciada antes de acessar $_SESSION
+$msg = isset($_SESSION['msg']) ? $_SESSION['msg'] : '';
+$status = isset($_SESSION['status']) ? $_SESSION['status'] : '';
+
+// Limpa as mensagens após carregá-las
+if (isset($_SESSION)) {
+    unset($_SESSION['msg']);
+    unset($_SESSION['status']);
+}
+?>
 <section class="contato_email">
     <article class="site">
         <form action="email.php" method="POST">
-            <?php
-            if (isset($msg) && isset($status)) {
-                if ($status == 'sucesso') {
-                    echo '<div class="alerta-sucesso"> ' . $msg . '</div>';
-                } elseif ($status == 'erro') {
-                    echo '<div class="alerta-erro"> ' . $msg . '</div>';
-                }
-            }
-            ?>
+            <?php if (!empty($msg)) : ?>
+                <?php if ($status == 'sucesso') : ?>
+                    <div class="alerta-sucesso"><?= $msg; ?></div>
+                <?php else : ?>
+                    <div class="alerta-erro"><?= $msg; ?></div>
+                <?php endif; ?>
+            <?php endif; ?>
             <div class="box_contato">
                 <div>
                     <label for="nome">Nome:</label>
