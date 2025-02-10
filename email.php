@@ -88,8 +88,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $_SESSION['msg']    = "Erro: " . $e->getMessage();
         $_SESSION['status'] = "Erro";
     }
-
-    // Redirecionar para o formulário
     header("Location: contato.php");
     exit;
 }
