@@ -1052,7 +1052,7 @@ body {
 }
 
 .contato_email {
-    .alerta-sucesso {
+    .custom-sucess {
         background-color: #d4edda;
         /* Verde claro */
         color: #155724;
@@ -1062,11 +1062,11 @@ body {
         text-align: center;
         font-weight: bold;
         margin-bottom: 10px;
-        font-size: 16pt;
+        font-size: 15pt;
         font-family: var(--font_poppins);
     }
 
-    .alerta-erro {
+    .custom-danger {
         background-color: #f8d7da;
         color: #721c24;
         padding: 20px;
@@ -1075,7 +1075,7 @@ body {
         text-align: center;
         font-weight: bold;
         margin-bottom: 10px;
-        font-size: 16pt;
+        font-size: 15pt;
         font-family: var(--font_poppins);
     }
 
