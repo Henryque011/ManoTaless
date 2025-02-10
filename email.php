@@ -10,12 +10,22 @@ require_once("vendors/PHPMailer/src/Exception.php");
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     try {
-        $nome     = htmlspecialchars($_POST["nome"]);
-        $telefone = htmlspecialchars($_POST["tel"]);
+        $nome     = trim(htmlspecialchars($_POST["nome"]));
+        $telefone = trim($_POST["tel"]);
         $email    = filter_var($_POST["email"], FILTER_SANITIZE_EMAIL);
         $mensagem = htmlspecialchars($_POST["mensagem"]);
         $assunto  = "Mano Taless";
 
+        if (mb_strlen($nome, 'UTF-8') > 50) {
+            throw new Exception("O nome deve conter no máximo 50 caracteres.");
+        }
+        if (!preg_match("/^[a-zA-ZÀ-ÿ\s]+$/u", $nome)) {
+            throw new Exception("O nome deve conter apenas letras e espaços.");
+        }
+        if (!preg_match('/^[0-9]+$/', $telefone)) {
+            throw new Exception("O telefone deve conter apenas números.");
+        }
+        $telefone = htmlspecialchars($telefone);
         if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
             throw new Exception("Email inválido!");
             // require_once("contato.php");
