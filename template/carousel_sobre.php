@@ -32,8 +32,8 @@
 
         </div>
         <div class="side">
-            <button><a href="servicos.html">saiba mais sobre</a></button>
-            <button><a href="contato.html">entre em contato</a></button>
+            <button><a href="servicos.php">saiba mais sobre</a></button>
+            <button><a href="contato.php">entre em contato</a></button>
         </div>
         <div class="space">
         </div>
