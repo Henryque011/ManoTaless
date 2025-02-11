@@ -1,4 +1,5 @@
 <?php
+require_once 'config/config.php';
 session_start();
 
 use PHPMailer\PHPMailer\PHPMailer;
@@ -38,16 +39,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail = new PHPMailer(true);
         $mail->isSMTP();
         $mail->SMTPDebug = 0;
-        $mail->Host = "HOST_EMAIL";
-        $mail->Port = "PORT_EMAIL";
+        $mail->Host = HOST_EMAIL;
+        $mail->Port = PORT_EMAIL;
         $mail->SMTPSecure = 'tls';
         $mail->SMTPAuth = true;
 
-        $mail->Username = "USER_EMAIL";
-        $mail->Password = "PASS_EMAIL";
+        $mail->Username = USER_EMAIL;
+        $mail->Password = PASS_EMAIL;
 
-        $mail->setFrom("abxqtzseven@gmail.com", $nome);
-        $mail->addAddress("abxqtzseven@gmail.com", $assunto);
+        $mail->setFrom(USER_EMAIL, $nome);
+        $mail->addAddress(USER_EMAIL, $assunto);
         $mail->Subject = $assunto;
 
         $mail->isHTML(true);
@@ -63,15 +64,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         $phpmailResposta->isSMTP();
         $phpmailResposta->SMTPDebug = 0;
-        $phpmailResposta->Host = "smtp.gmail.com";
-        $phpmailResposta->Port = 587;
+        $phpmailResposta->Host = HOST_EMAIL;
+        $phpmailResposta->Port = PORT_EMAIL;
         $phpmailResposta->SMTPSecure = 'tls';
         $phpmailResposta->SMTPAuth = true;
-        $phpmailResposta->Username = "abxqtzseven@gmail.com";
-        $phpmailResposta->Password = "mvll lewe mtxj ugeb";
+        $phpmailResposta->Username = USER_EMAIL;
+        $phpmailResposta->Password = PASS_EMAIL;
 
         $phpmailResposta->IsHTML(true);
-        $phpmailResposta->setFrom("abxqtzseven@gmail.com", "Mano Taless");
+        $phpmailResposta->setFrom(USER_EMAIL, "Mano Taless");
         $phpmailResposta->addAddress($email, $nome);
         $phpmailResposta->Subject = "Resposta - " . $assunto;
 
