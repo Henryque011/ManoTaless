@@ -1180,7 +1180,6 @@ body {
 }
 
 /* loader */
-/* HTML: <div class="loader"></div> */
 .loader {
     --w: 10ch;
     font-weight: bold;
@@ -1195,7 +1194,7 @@ body {
 }
 
 .loader:before {
-    content: "Carregando...";
+    content: "Carregando. . .";
 }
 
 @keyframes l33 {
@@ -1276,7 +1275,6 @@ body {
     }
 }
 
-/* CSS do overlay do loader */
 #loader-overlay {
     position: fixed;
     top: 0;
@@ -1288,4 +1286,16 @@ body {
     justify-content: center;
     align-items: center;
     z-index: 10000;
+}
+
+/* Posiciona o botão do VLibras no lado esquerdo */
+[vw-access-button] {
+    left: 20px !important; /* Ajuste a distância da borda esquerda */
+    right: auto !important;
+}
+
+/* Posiciona a janela do VLibras no lado esquerdo */
+[vw-plugin-wrapper] {
+    left: 0 !important;
+    right: auto !important;
 }
