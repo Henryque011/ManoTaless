@@ -31,6 +31,10 @@ session_start(); // Inicia a sessão antes de qualquer saída
 </head>
 
 <body>
+    <!-- Overlay do Loader -->
+    <div id="loader-overlay" style="display: none;">
+        <div class="loader"></div>
+    </div>
     <?php require_once('template/pg_contato/topo_contato.php') ?>
     <main>
         <?php require_once('template/pg_contato/redes.php') ?>
