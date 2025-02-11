@@ -1288,14 +1288,27 @@ body {
     z-index: 10000;
 }
 
-/* Posiciona o botão do VLibras no lado esquerdo */
-[vw-access-button] {
-    left: 20px !important; /* Ajuste a distância da borda esquerda */
-    right: auto !important;
+.vlibras {
+    display: flex;
+    justify-content: start;
 }
 
-/* Posiciona a janela do VLibras no lado esquerdo */
+/* Posiciona o botão de ativação no lado esquerdo */
+[vw-access-button] {
+    position: fixed !important;
+    left: 10px !important;
+    /* Define a posição na esquerda */
+    right: auto !important;
+    bottom: 20px !important;
+    /* Mantém ele na parte inferior */
+    z-index: 99999 !important;
+}
+
+/* Posiciona o widget de tradução no lado esquerdo */
 [vw-plugin-wrapper] {
+    position: fixed !important;
     left: 0 !important;
     right: auto !important;
+    bottom: 0 !important;
+    z-index: 99999 !important;
 }
