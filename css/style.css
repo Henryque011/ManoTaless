@@ -172,18 +172,18 @@ body {
             background: none;
             border: none;
             font-size: 21pt;
-            color: red;
+            color: rgb(200 45 219);
             align-items: start;
             font-weight: 500;
             font-family: var(--font_poppins);
 
             .fa-arrow-left {
-                color: red;
+                color: rgb(200 45 219);
                 margin: 0 15px;
             }
 
             .bnt-sair {
-                color: red;
+                color: rgb(148, 5, 148);
                 align-items: center;
                 text-align: center;
 
