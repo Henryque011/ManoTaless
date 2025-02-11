@@ -96,3 +96,23 @@ document.addEventListener('DOMContentLoaded', function () {
     })
 });
 
+//loader 
+document.addEventListener('DOMContentLoaded', function () {
+    // Seleciona todos os links que não abrem em nova aba (target="_blank")
+    var links = document.querySelectorAll('a:not([target="_blank"])');
+    var loaderOverlay = document.getElementById('loader-overlay');
+
+    links.forEach(function (link) {
+        link.addEventListener('click', function (e) {
+            e.preventDefault(); // Impede a navegação imediata
+
+            // Exibe o overlay com o loader
+            loaderOverlay.style.display = 'flex';
+
+            // Opcional: Aguarda um breve momento para que o loader seja visível
+            setTimeout(function () {
+                window.location.href = link.href;
+            }, 1000);
+        });
+    });
+});
