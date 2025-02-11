@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <!-- test commit -->
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -29,6 +30,11 @@
 </head>
 
 <body>
+    <!-- Overlay do Loader -->
+    <div id="loader-overlay" style="display: none;">
+        <div class="loader"></div>
+    </div>
+
     <?php require_once('template/topo.php') ?>
     <main>
         <?php require_once('template/apresentation.php') ?>
