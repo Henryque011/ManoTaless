@@ -48,7 +48,7 @@
                 </div>
             </div>
             <div class="danca_mp4">
-                <video width="255px" controls style="width: 300px; border-radius: 40px;">
+                <video width="255px" autoplay loop muted style="width: 300px; border-radius: 40px;">
                     <source src="video/video1.mp4" type="video/mp4">
                 </video>
             </div>
