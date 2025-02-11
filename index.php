@@ -30,11 +30,7 @@
 </head>
 
 <body>
-    <!-- Overlay do Loader -->
-    <div id="loader-overlay" style="display: none;">
-        <div class="loader"></div>
-    </div>
-
+    <?php require_once('template/loader.php') ?>
     <?php require_once('template/topo.php') ?>
     <main>
         <?php require_once('template/apresentation.php') ?>
