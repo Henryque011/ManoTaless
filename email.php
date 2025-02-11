@@ -30,7 +30,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             throw new Exception("Email inválido!");
             // require_once("contato.php");
         }
-        $maxLength = 500; 
+        $maxLength = 500;
         if (mb_strlen($mensagem, 'UTF-8') > $maxLength) {
             throw new Exception("A mensagem deve conter no máximo {$maxLength} caracteres.");
         }
@@ -38,13 +38,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail = new PHPMailer(true);
         $mail->isSMTP();
         $mail->SMTPDebug = 0;
-        $mail->Host = "smtp.gmail.com";
-        $mail->Port = 587;
+        $mail->Host = "HOST_EMAIL";
+        $mail->Port = "PORT_EMAIL";
         $mail->SMTPSecure = 'tls';
         $mail->SMTPAuth = true;
 
-        $mail->Username = "abxqtzseven@gmail.com";
-        $mail->Password = "mvll lewe mtxj ugeb";
+        $mail->Username = "USER_EMAIL";
+        $mail->Password = "PASS_EMAIL";
 
         $mail->setFrom("abxqtzseven@gmail.com", $nome);
         $mail->addAddress("abxqtzseven@gmail.com", $assunto);
