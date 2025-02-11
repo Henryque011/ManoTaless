@@ -28,6 +28,10 @@
 </head>
 
 <body>
+    <!-- Overlay do Loader -->
+    <div id="loader-overlay" style="display: none;">
+        <div class="loader"></div>
+    </div>
     <?php require_once('template/pg_servico/topo_serv.php') ?>
     <main>
         <?php require_once('template/pg_servico/modelo.php') ?>
