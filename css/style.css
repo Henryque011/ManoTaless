@@ -1302,6 +1302,10 @@ div[vw-access-button] {
 /* responsivoo */
 
 @media (max-width: 1024px) {
+    .presentation .side {
+        margin: none;
+    }
+
     .side .sobre .sobre_txt p {
         padding: 5px;
     }
