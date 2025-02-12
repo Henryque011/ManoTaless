@@ -487,7 +487,6 @@ body {
                 .slick-next {
                     right: 90px;
                     top: 105%;
-
                 }
 
                 .slick-dots li button:before {
@@ -1314,5 +1313,24 @@ div[vw-access-button] {
         border-radius: 20px;
         width: 280px;
         height: auto;
+    }
+
+    .carousel_sobre .slick-prev {
+        left: 50px;
+        top: 105%;
+    }
+
+    .carousel_sobre .slick-next {
+        right: 90px;
+        top: 105%;
+    }
+
+    .videos_sobre .side {
+        margin: none;
+        width: 90%;
+    }
+
+    .videos_sobre .box_video {
+        width: 50%;
     }
 }
