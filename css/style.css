@@ -1298,3 +1298,17 @@ div[vw-access-button] {
     visibility: visible !important;
     z-index: 9999 !important;
 } */
+
+/* responsivoo */
+
+@media (max-width: 1024px) {
+    .side .sobre .sobre_txt p {
+        padding: 5px;
+    }
+
+    .side .sobre_img img {
+        border-radius: 20px;
+        width: 280px;
+        height: auto;
+    }
+}
