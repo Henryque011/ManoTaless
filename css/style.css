@@ -1288,27 +1288,13 @@ body {
     z-index: 10000;
 }
 
-.vlibras {
-    display: flex;
-    justify-content: start;
+/* div[vw] .enabled {
+  
 }
 
-/* Posiciona o botão de ativação no lado esquerdo */
-[vw-access-button] {
-    position: fixed !important;
-    left: 10px !important;
-    /* Define a posição na esquerda */
-    right: auto !important;
-    bottom: 20px !important;
-    /* Mantém ele na parte inferior */
-    z-index: 99999 !important;
-}
-
-/* Posiciona o widget de tradução no lado esquerdo */
-[vw-plugin-wrapper] {
-    position: fixed !important;
-    left: 0 !important;
-    right: auto !important;
-    bottom: 0 !important;
-    z-index: 99999 !important;
-}
+div[vw-access-button] {
+    display: block !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    z-index: 9999 !important;
+} */
