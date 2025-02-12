@@ -116,3 +116,27 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
+
+;
+// window.onload = function() {
+//     setTimeout(() => {
+//         let vlibrasElement = document.querySelector('div[vw]');
+//         let vlibrasButton = document.querySelector('div[vw-access-button]');
+
+//         if (vlibrasElement) {
+//             vlibrasElement.style.left = "0px";
+//             vlibrasElement.style.right = "auto";
+//             vlibrasElement.style.opacity = "1";
+//             vlibrasElement.style.display = "block";
+//             vlibrasElement.style.visibility = "visible";
+//         }
+
+//         if (vlibrasButton) {
+//             vlibrasButton.style.opacity = "1";
+//             vlibrasButton.style.display = "block";
+//             vlibrasButton.style.visibility = "visible";
+//         }
+//     }, 1000); // Espera 1 segundo para garantir que o VLibras carregou
+// };
+
+
