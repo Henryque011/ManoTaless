@@ -1,6 +1,6 @@
 <section class="carousel_sobre">
     <article class="site">
-        <h2>Assista alguns dos meus trabalhos</h2>
+        <h2>Veja alguns dos meus trabalhos</h2>
 
         <div class="box_carousel">
             <div>
