@@ -20,7 +20,7 @@
                 <h3>todo contato é feito exclusivamente pelo <span style="color: #7d1ecc;">whatsapp</span></h3>
                 <button><a href="contato.html">entre em contato</a></button>
             </div>
-            <div class="box_video" style="width: 450px;">
+            <div class="box_video">
                 <div><video width="100%" autoplay muted style="width: 325px; border-radius: 20px;">
                         <source src="video/video1.mp4" type="video/mp4">
                     </video>
