@@ -42,14 +42,14 @@
                 </div>
             </div>
         </div>
-        <!-- <h4>para marcar seu horario entre em contato diretamente pelo <span style="color: #7d1ecc;"> whatsapp
-                </span></h4>
-            <div class="cabelos_links">
-                <div class="side">
-                    <button><a href="https://wa.me/5511970428582" target="_blank">whatsapp</a></button>
-                    <button><a href="contato.html">redes sociais</a></button>
-                </div>
+        <h4>para marcar seu horario entre em contato diretamente pelo <span style="color: #7d1ecc;"> whatsapp
+            </span></h4>
+        <div class="cabelos_links">
+            <div class="side">
+                <button><a href="https://wa.me/5511970428582" target="_blank">whatsapp</a></button>
+                <button><a href="contato.html">redes sociais</a></button>
             </div>
-            <div class="space"></div> --> -->
+        </div>
+        <div class="space"></div>
     </article>
 </section>
