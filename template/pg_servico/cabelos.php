@@ -47,7 +47,8 @@
             </span></h4>
         <div class="cabelos_links">
             <div class="side">
-                <a href="https://wa.me/5511970428582" target="_blank"><i class="fa-brands fa-whatsapp" title="WHATSAPP"></i></a> <button><a href="contato.html">redes sociais</a></button>
+                <a href="https://wa.me/5511970428582" target="_blank"><i class="fa-brands fa-whatsapp" title="WHATSAPP"></i></a>
+                <button><a href="contato.html">redes sociais</a></button>
             </div>
         </div>
         <div class="space"></div>
