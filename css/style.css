@@ -608,7 +608,7 @@ body {
         border: none;
         background-color: rgb(255, 255, 255);
         height: 5px;
-        margin: 10px;
+        margin: 10px 0px;
     }
 
     p {
@@ -823,8 +823,8 @@ body {
     }
 
     .box_estilos {
-        width: 100%;
-        max-width: 1200px;
+        
+        
 
         .button_estilos {
             display: flex;
@@ -1353,9 +1353,16 @@ div[vw-access-button] {
         justify-content: center;
     }
 
-    .videos_sobre .box_video {}
-
     .videos_sobre .box_video.slick-initialized.slick-slider.slick-dotted {
         width: 385px;
+    }
+
+    .estilos_fotos .box_estilos .button_estilos {
+        /* width: 160px; */
+
+    }
+
+    .estilos_fotos .box_estilos .button_estilos button {
+        margin: 0px 5px;
     }
 }
