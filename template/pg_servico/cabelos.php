@@ -42,12 +42,12 @@
                 </div>
             </div>
         </div>
-        <h4>para marcar seu horario entre em contato diretamente pelo <span style="color: #7d1ecc;"> whatsapp
+        <h4>Os preços podem varias conforme o estilo!</h4>
+        <h4>Agende seu horário diretamente pelo <span style="color: #7d1ecc;"> whatsapp
             </span></h4>
         <div class="cabelos_links">
             <div class="side">
-                <button><a href="https://wa.me/5511970428582" target="_blank">whatsapp</a></button>
-                <button><a href="contato.html">redes sociais</a></button>
+                <a href="https://wa.me/5511970428582" target="_blank"><i class="fa-brands fa-whatsapp" title="WHATSAPP"></i></a> <button><a href="contato.html">redes sociais</a></button>
             </div>
         </div>
         <div class="space"></div>
