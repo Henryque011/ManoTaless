@@ -1357,12 +1357,8 @@ div[vw-access-button] {
         width: 385px;
     }
 
-    .estilos_fotos .box_estilos .button_estilos {
-        /* width: 160px; */
-
-    }
-
     .estilos_fotos .box_estilos .button_estilos button {
         margin: 0px 5px;
+        width: 160px;
     }
 }
