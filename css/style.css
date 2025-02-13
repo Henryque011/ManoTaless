@@ -760,10 +760,9 @@ body {
         }
     }
 
-
     .cabelos_links {
         display: contents;
-        
+
         .side {
             display: flex;
             padding: 5px;
@@ -772,6 +771,17 @@ body {
             justify-content: space-evenly;
             align-items: center;
             text-align: center;
+
+            a {
+                font-size: 31pt;
+                text-decoration: none;
+                color: var(--medium_purple);
+
+                :hover {
+                    transition: 0.5s ease;
+                    transform: scale(1.09);
+                }
+            }
 
             button {
                 width: 250px;
