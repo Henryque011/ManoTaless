@@ -22,7 +22,7 @@
                     <li>estilo: streetwer</li>
                 </ul>
             </div>
-            <div>
+            <div class="foto_modelo">
                 <img src="img/fotomissao.png" alt="Foto de modelo">
             </div>
         </div>
