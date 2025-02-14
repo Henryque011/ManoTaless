@@ -1144,7 +1144,7 @@ body {
     }
 
     textarea {
-        width: 1200px;
+        width: 95%;
         height: 200px;
         border-radius: 10px;
         margin: 5px;
@@ -1155,6 +1155,10 @@ body {
 
     #placeholder-text::placeholder {
         text-transform: uppercase;
+    }
+
+    .space {
+        padding: 20px;
     }
 
     .box_mensagem {
@@ -1355,19 +1359,6 @@ div[vw-access-button] {
         width: 385px;
     }
 
-    /* pg sobre */
-    .estilos_fotos .box_estilos .button_estilos button {
-        /* margin: 0px 5px; */
-        /* width: 160px; */
-    }
-
-
-    .estilos_fotos .box_estilos {}
-
-    .estilos_fotos .box_estilos .button_estilos {
-        /* width: 60%; */
-    }
-
     .button_estilos {
         flex-wrap: wrap;
         justify-content: center;
@@ -1378,7 +1369,6 @@ div[vw-access-button] {
         min-width: 120px;
         margin: 5px;
     }
-
 
     .box_corte,
     .box_tranca,
@@ -1398,5 +1388,20 @@ div[vw-access-button] {
         max-width: 200px;
     }
 
+    .contato_email .box_contato {
+        display: contents;
+    }
 
+    .contato_email .box_contato div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+    }
+
+    .contato_email .box_contato div .campo_email {
+        width: 85%;
+    }
 }
+
+@media (max-width: 768px) {}
