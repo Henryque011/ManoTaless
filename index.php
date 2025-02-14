@@ -34,9 +34,6 @@
     <?php require_once('template/topo.php') ?>
     <main>
         <?php require_once('template/apresentation.php') ?>
-        <div class="space">
-
-        </div>
         <?php require_once('template/carousel_sobre.php') ?>
         <?php require_once('template/videos_sobre.php') ?>
         <?php require_once('template/upper.php') ?>
