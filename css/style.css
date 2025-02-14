@@ -105,7 +105,7 @@ body {
                 a {
                     color: white;
                     text-decoration: none;
-                    font-size: 16pt;
+                    font-size: 13pt;
                     font-family: var(--font_poppins);
                     display: block;
 
@@ -632,12 +632,12 @@ body {
 /* pag servicos */
 .modelo {
     h2 {
-        align-items: center;
+        align-items: self-start;
         text-align: center;
         text-transform: uppercase;
         font-family: var(--font_goldman);
         font-size: 18pt;
-        margin: 20px;
+        margin: 5px 20px;
         padding: 5px;
     }
 
@@ -651,14 +651,16 @@ body {
     }
 
     .side {
-        height: 615px;
-        justify-content: space-between;
+        width: 100%;
+        height: auto;
+        margin: 10px;
+        justify-content: space-around;
 
         .modelo_carac {
             ul {
                 li {
                     display: flex;
-                    padding: 10px;
+                    padding: 5px;
                     font-size: 14pt;
                     text-align: center;
                     align-items: center;
@@ -670,9 +672,14 @@ body {
             }
         }
 
-        img {
-            width: 440px;
+        .foto_modelo {
+            width: 350px;
             border-radius: 20px;
+
+            img {
+                width: 350px;
+                border-radius: 20px;
+            }
         }
     }
 }
@@ -1001,7 +1008,7 @@ body {
     }
 
     .side {
-        height: 600px;
+        height: auto;
         justify-content: space-between;
 
         .sobre_danca {
@@ -1433,20 +1440,20 @@ div[vw-access-button] {
         width: 225px;
         height: 230px;
         margin: 0px;
-    }   
-    
+    }
+
     .videos_sobre .banner {
         height: 200px;
     }
 
     .videos_sobre .site .side .box_video div {
         width: 100%;
-    }     
-    
+    }
+
     .footer .side div a {
         font-size: 16pt;
     }
-    
+
     .footer .site .side div {
         margin: 5px 10px;
     }
@@ -1454,5 +1461,18 @@ div[vw-access-button] {
     .footer .site .side:nth-child(3) {
         margin: 0px;
         height: 30px;
+    }
+
+    .modelo .site .side .modelo_carac {
+        align-items: self-start;
+    }
+
+    .modelo .side:nth-child(2) {
+        /* width: 350px; */
+        background-color: red;
+    }
+
+    .modelo .site img {
+        width: 75%;
     }
 }
