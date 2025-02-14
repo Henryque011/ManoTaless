@@ -53,6 +53,5 @@
                 </video>
             </div>
         </div>
-        <div class="space"></div>
     </article>
 </section>
