@@ -14,20 +14,21 @@
             <div class="box_contato">
                 <div>
                     <label for="nome">Nome:</label>
-                    <input id="placeholder-text" type="text" name="nome" id="nome" placeholder="Nome completo: "
+                    <input class="campo_email" id="placeholder-text" type="text" name="nome" id="nome" placeholder="Nome completo: "
                         required>
                 </div>
                 <div>
                     <label for="tel">telefone:</label>
-                    <input id="placeholder-text" type="tel" name="tel" id="tel" placeholder="Telefone: "
+                    <input class="campo_email" id="placeholder-text" type="tel" name="tel" id="tel" placeholder="Telefone: "
                         required>
                 </div>
                 <div>
                     <label for="email">email:</label>
-                    <input id="placeholder-text" type="email" name="email" id="email" placeholder="Email: "
+                    <input class="campo_email" id="placeholder-text" type="email" name="email" id="email" placeholder="Email: "
                         required>
                 </div>
             </div>
+            <div class="space"></div>
             <div class="box_mensagem">
                 <div>
                     <label for="mensagem"> Mensagem:</label>
