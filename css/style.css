@@ -98,14 +98,14 @@ body {
             padding: 0;
 
             li {
-                padding: 15px 10px;
+                padding: 5px 5px;
                 text-align: center;
                 text-align: center;
 
                 a {
                     color: white;
                     text-decoration: none;
-                    font-size: 22px;
+                    font-size: 16pt;
                     font-family: var(--font_poppins);
                     display: block;
 
@@ -127,7 +127,7 @@ body {
                     align-items: center;
                     text-align: center;
                     font-size: 16pt;
-                    margin: 15px 0;
+                    margin: 5px 0px;
                     color: white;
                     font-weight: 500;
                 }
@@ -463,7 +463,7 @@ body {
                     border-radius: 20px;
 
                     video {
-                        width: 400px;
+                        width: 100%;
                         align-items: center;
                         text-align: center;
                     }
@@ -533,7 +533,7 @@ body {
 .footer {
     background-image: url(../img/purpleground.jpg);
     filter: blur(100%);
-    height: 375px;
+    height: auto;
     align-items: center;
     text-align: center;
 
@@ -541,7 +541,7 @@ body {
         justify-content: space-between;
         align-items: center;
         text-align: center;
-        height: 300px;
+        height: auto;
         margin: 0;
 
         div {
@@ -1409,6 +1409,10 @@ div[vw-access-button] {
         padding: 5px;
     }
 
+    header .topo .menu-lateral {
+        width: 410px;
+    }
+
     .presentation .site .side {
         align-items: self-start;
     }
@@ -1423,5 +1427,32 @@ div[vw-access-button] {
 
     .carousel_sobre .site .box_carousel div {
         width: 95%;
+    }
+
+    .carousel_sobre .box_carousel div img {
+        width: 225px;
+        height: 230px;
+        margin: 0px;
+    }   
+    
+    .videos_sobre .banner {
+        height: 200px;
+    }
+
+    .videos_sobre .site .side .box_video div {
+        width: 100%;
+    }     
+    
+    .footer .side div a {
+        font-size: 16pt;
+    }
+    
+    .footer .site .side div {
+        margin: 5px 10px;
+    }
+
+    .footer .site .side:nth-child(3) {
+        margin: 0px;
+        height: 30px;
     }
 }
