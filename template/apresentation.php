@@ -52,5 +52,7 @@
                 <img src="img/tranca4.png" alt="Foto apresentativa sobre quem eu sou">
             </div>
         </div>
+        <div class="space">
+        </div>
     </article>
 </section>
