@@ -259,7 +259,7 @@ body {
     .sobre_img {
         img {
             border-radius: 20px;
-            width: 320px;
+            width: auto;
             height: 420px;
         }
     }
@@ -672,12 +672,12 @@ body {
             }
         }
 
-        .foto_modelo {
-            width: 350px;
-            border-radius: 20px;
+        . {
+            /* width: 325px; */
+            /* border-radius: 20px; */
 
             img {
-                width: 350px;
+                width: 325px;
                 border-radius: 20px;
             }
         }
