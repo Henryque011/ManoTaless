@@ -1522,3 +1522,25 @@ div[vw-access-button] {
         padding: 10px;
     }
 }
+
+@media (max-width: 480px) {
+    header .site .menu {
+        display: block;
+    }
+
+    header .site .topo .menu-lateral ul { 
+        display: none;
+    }
+
+    header .site .topo .menu-lateral {
+        width: 200px;
+    }
+
+    header .site .topo nav {
+        display: none;
+    }
+
+    header .site .topo .menu-lateral div ul {
+        display: block;
+    }
+}
