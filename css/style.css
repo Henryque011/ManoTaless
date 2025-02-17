@@ -1513,4 +1513,12 @@ div[vw-access-button] {
         margin: 1px;
         padding: 1px;
     }
+
+    .dancarino .banner {
+        height: 150px;
+    }
+
+    .space {
+        padding: 10px;
+    }
 }
