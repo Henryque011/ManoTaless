@@ -672,9 +672,11 @@ body {
             }
         }
 
-        img {
-            width: 325px;
-            border-radius: 20px;
+        .sobre_img {
+            img {
+                width: 325px;
+                border-radius: 20px;
+            }
         }
     }
 }
@@ -1007,7 +1009,6 @@ body {
         justify-content: space-between;
 
         .sobre_danca {
-            /* width: 65%; */
 
             p {
                 padding: 10px;
@@ -1463,11 +1464,28 @@ div[vw-access-button] {
     }
 
     .modelo .side:nth-child(2) {
-        /* width: 350px; */
         background-color: red;
     }
 
-    .modelo .site img {
+    .modelo .site .side {
+        margin: 0px;
+        width: 100%;
+    }
+
+    .modelo .site .sobre_img {
+        width: 36%;
+    }
+
+    .modelo .site .sobre_img img {
         width: 75%;
+    }
+
+    .modelo .site .side .modelo_carac ul li {
+        font-size: 10pt;
+    }
+
+    .modelo .site .side .modelo_carac h2 {
+        font-size: 14pt;
+        margin: 0px;
     }
 }
