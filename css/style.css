@@ -1488,4 +1488,10 @@ div[vw-access-button] {
         font-size: 14pt;
         margin: 0px;
     }
+
+    .cabelos .site .box_cabelo .card img {
+        width: 200px;
+        height: 200px;
+    }
+    
 }
