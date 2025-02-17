@@ -24,6 +24,15 @@
             </div>
             <div class="menu-lateral" id="menu-lateral">
                 <button class="btn-sair" style="background: none;"><i class="fa-solid fa-arrow-left"></i>Sair</button>
+                <div>
+                    <ul>
+                        <li><a class="active" href="index.php">Home</a></li>
+                        <li><a href="servicos.php">Serviços</a></li>
+                        <li><a href="contato.php">Contato</a></li>
+                    </ul>
+                </div>
+
+
                 <ul>
                     <li><img src="img/logo.svg" alt="Logo mano taless"></li>
                     <li style="display: flex;justify-content: space-between;">
@@ -48,9 +57,16 @@
                             endereço: <a
                                 href="https://www.google.com.br/maps/@-23.517101,-46.4223075,3a,75y,257.17h,90.77t/data=!3m7!1e1!3m5!1svHapGgESPOsFGsTwFr7eXg!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D-0.7708500411782353%26panoid%3DvHapGgESPOsFGsTwFr7eXg%26yaw%3D257.1718916908085!7i16384!8i8192?entry=ttu&g_ep=EgoyMDI1MDExMC4wIKXMDSoASAFQAw%3D%3D"
                                 target="_blank">av. nordestina n°4350<i class="fa-solid fa-location-dot"></i></a>
-                        </p>>
+                        </p>
                     </li>
                 </ul>
+                <nav>
+                    <ul>
+                        <li><a class="active" href="index.php">Home</a></li>
+                        <li><a href="servicos.php">Serviços</a></li>
+                        <li><a href="contato.php">Contato</a></li>
+                    </ul>
+                </nav>
             </div>
         </div>
     </section>
