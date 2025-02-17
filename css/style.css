@@ -672,14 +672,9 @@ body {
             }
         }
 
-        . {
-            /* width: 325px; */
-            /* border-radius: 20px; */
-
-            img {
-                width: 325px;
-                border-radius: 20px;
-            }
+        img {
+            width: 325px;
+            border-radius: 20px;
         }
     }
 }
