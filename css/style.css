@@ -1493,5 +1493,24 @@ div[vw-access-button] {
         width: 200px;
         height: 200px;
     }
-    
+
+    .estilos_fotos .site .box_estilos .imgs_box .imagem_container {
+        width: 100%;
+    }
+
+    .estilos_fotos .site .box_estilos .imgs_box .imagem_container .imagemCorte .imagemTranca .imagemBarba .imagemDread .imagemSobrancelha {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .estilos_fotos .box_estilos .imagemCorte,
+    .estilos_fotos .box_estilos .imagemTranca,
+    .estilos_fotos .box_estilos .imagemBarba,
+    .estilos_fotos .box_estilos .imagemDread,
+    .estilos_fotos .box_estilos .imagemSobrancelha {
+        width: 175px;
+        height: 175px;
+        margin: 1px;
+        padding: 1px;
+    }
 }
