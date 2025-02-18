@@ -1631,6 +1631,8 @@ div[vw-access-button] {
     .videos_sobre .site .side {
         display: flex;
         flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
 
     .videos_sobre .site .side div h3 {
@@ -1642,4 +1644,11 @@ div[vw-access-button] {
         height: auto;
     }
 
+    .videos_sobre .site .side .box_video div {
+        width: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
 }
