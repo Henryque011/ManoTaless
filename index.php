@@ -35,7 +35,7 @@
     <main>
         <?php require_once('template/apresentation.php') ?>
         <?php require_once('template/carousel_sobre.php') ?>
-    <!--    <?php require_once('template/videos_sobre.php') ?> -->
+        <?php require_once('template/videos_sobre.php') ?>
         <?php require_once('template/upper.php') ?>
     </main>
     <!-- <?php require_once('template/footer.php') ?> -->
