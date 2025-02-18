@@ -93,6 +93,10 @@ body {
         padding-top: 20px;
         z-index: 1000;
 
+        .menu_responsivo {
+            display: block;
+        }
+
         ul {
             list-style: none;
             padding: 0;
@@ -1528,19 +1532,41 @@ div[vw-access-button] {
         display: block;
     }
 
-    header .site .topo .menu-lateral ul { 
-        display: none;
-    }
-
     header .site .topo .menu-lateral {
         width: 200px;
     }
 
-    header .site .topo nav {
+    header .site nav {
         display: none;
     }
 
-    header .site .topo .menu-lateral div ul {
+    header .site .topo .menu-lateral .menu_reponsivo {
+        display: block !important;
+    }
+
+    header .site .menu-lateral .menu_responsivo ul li a {
         display: block;
+    }
+
+    header .site .menu-lateral>ul>li {
+        display: none;
+    }
+
+    header .site .menu-lateral>ul>li:nth-child(2) {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    header .site .menu-lateral>ul>li>p {
+        display: none;
+        /* justify-content: space-between; */
+    }
+    header .site .menu-lateral ul li .redes_sociais a {
+        font-size: 16pt;
+    }
+
+    header .site .topo .menu-lateral ul li .redes_sociais {
+        display: flex;
+        justify-content: space-around;
     }
 }
