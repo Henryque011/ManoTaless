@@ -1559,8 +1559,8 @@ div[vw-access-button] {
 
     header .site .menu-lateral>ul>li>p {
         display: none;
-        /* justify-content: space-between; */
     }
+
     header .site .menu-lateral ul li .redes_sociais a {
         font-size: 16pt;
     }
@@ -1568,5 +1568,46 @@ div[vw-access-button] {
     header .site .topo .menu-lateral ul li .redes_sociais {
         display: flex;
         justify-content: space-around;
+    }
+
+    header .site .topo .menu-lateral button {
+        font-size: 16pt;
+    }
+
+    header .site .topo div:nth-child(1) img {
+        width: 120px;
+    }
+
+    .presentation .site .side .sobre_img img {
+        border-radius: 20px;
+        width: 180px;
+        height: auto;
+    }
+
+    .presentation .site .side .sobre h2 {
+        font-size: 12pt;
+        margin: 1px 2px;
+    }
+
+    .presentation .site .side .sobre .sobre_carrosel h2 {
+        font-size: 10pt;
+        margin: 1px 2px;
+
+    }
+
+    .presentation .site .side .sobre_txt p {
+        font-size: 8pt;
+        margin: 2px 2px;
+        padding: 1px;
+    }
+
+    .presentation .site .side {
+        margin: 2px;
+        padding: 0px;
+        height: 300px;
+    }
+
+    .presentation .site .side .sobre {
+        height: 310px;
     }
 }
