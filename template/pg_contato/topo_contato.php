@@ -16,6 +16,13 @@
             </div>
             <div class="menu-lateral" id="menu-lateral">
                 <button class="btn-sair" style="background: none;"><i class="fa-solid fa-arrow-left"></i>Sair</button>
+                <div class="menu_reponsivo" style="display: none;">
+                    <ul>
+                        <li><a href="index.php">Home</a></li>
+                        <li><a href="servicos.php">Serviços</a></li>
+                        <li><a class="active" href="contato.php">Contato</a></li>
+                    </ul>
+                </div>
                 <ul>
                     <li><img src="img/logo.svg" alt="Logo mano taless"></li>
                     <li style="display: flex;justify-content: space-between;">
