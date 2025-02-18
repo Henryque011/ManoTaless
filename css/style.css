@@ -1586,7 +1586,7 @@ div[vw-access-button] {
 
     .presentation .site .side .sobre h2 {
         font-size: 12pt;
-        margin: 1px 2px;
+        margin: 3px 2px;
     }
 
     .presentation .site .side .sobre .sobre_carrosel h2 {
@@ -1610,4 +1610,36 @@ div[vw-access-button] {
     .presentation .site .side .sobre {
         height: 310px;
     }
+
+    .carousel_sobre .site h2 {
+        font-size: 12pt;
+        margin: 5px 0px;
+    }
+
+    .carousel_sobre .site .space {
+        padding: 5px;
+    }
+
+    .carousel_sobre .site .side button {
+        width: 200px;
+    }
+
+    .carousel_sobre .side button a {
+        font-size: 12pt;
+    }
+
+    .videos_sobre .site .side {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .videos_sobre .site .side div h3 {
+        margin: 5px 0px;
+        padding: 15px;
+    }
+
+    .videos_sobre .site .side div:nth-child(1) {
+        height: auto;
+    }
+
 }
