@@ -24,15 +24,13 @@
             </div>
             <div class="menu-lateral" id="menu-lateral">
                 <button class="btn-sair" style="background: none;"><i class="fa-solid fa-arrow-left"></i>Sair</button>
-                <div>
+                <div class="menu_reponsivo" style="display: none;">
                     <ul>
                         <li><a class="active" href="index.php">Home</a></li>
                         <li><a href="servicos.php">Serviços</a></li>
                         <li><a href="contato.php">Contato</a></li>
                     </ul>
                 </div>
-
-
                 <ul>
                     <li><img src="img/logo.svg" alt="Logo mano taless"></li>
                     <li style="display: flex;justify-content: space-between;">
@@ -60,13 +58,6 @@
                         </p>
                     </li>
                 </ul>
-                <nav>
-                    <ul>
-                        <li><a class="active" href="index.php">Home</a></li>
-                        <li><a href="servicos.php">Serviços</a></li>
-                        <li><a href="contato.php">Contato</a></li>
-                    </ul>
-                </nav>
             </div>
         </div>
     </section>
