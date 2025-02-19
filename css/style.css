@@ -1633,6 +1633,8 @@ div[vw-access-button] {
         flex-direction: column;
         align-items: center;
         text-align: center;
+        margin: 0px;
+        padding: 0px;
     }
 
     .videos_sobre .site .side div h3 {
@@ -1654,5 +1656,47 @@ div[vw-access-button] {
 
     .videos_sobre .site .side .box_video div video {
         width: 265px !important;
+    }
+
+    .upper button {
+        margin: 0px;
+    }         
+
+    .footer .site .side {
+        align-items: center;
+    }
+
+    .footer .site .side div a img {
+        width: 125px;
+        height: 55px;
+    }
+
+    .footer .side div a {
+        font-size: 9pt;
+        margin: 2px;
+    }
+
+    .footer .site .side div h3 {
+        font-size: 12pt;
+        margin: 2pt;
+    }
+
+    .footer .site .side div .redes_sociais a { 
+        font-size: 16pt;
+    }
+
+    .footer .site .side div {
+        margin: 1px 1px;
+    }
+
+    .footer p {
+        font-size: 14pt;
+    }
+
+    .footer hr {
+        margin: 5px 0px;
+    }
+    .footer p a {
+        font-size: 14pt;
     }
 }
