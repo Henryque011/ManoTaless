@@ -6,13 +6,15 @@
             <div class="modelo_carac">
                 <h2>características fisicas:</h2>
                 <ul>
-                    <li>altura: 1,80m</li>
-                    <li>peso: 75kgs</li>
+                    <li>idade: 27 anos</li>
+                    <li>altura: 1,84m</li>
+                    <li>peso: 74kgs</li>
                     <li>tipo de corpo: ectomorfo</li>
                     <li>cor do cabelo: preto</li>
                     <li>cor dos ohos: marrom</li>
                     <li>tom de pele: negra</li>
                     <li>sorriso alinhado e dentes brancos</li>
+                    <li>são paulo - zona leste - brasil</li>
                 </ul>
                 <h2>medidas e projeção</h2>
                 <ul>
