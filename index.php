@@ -38,7 +38,7 @@
         <?php require_once('template/videos_sobre.php') ?>
         <?php require_once('template/upper.php') ?>
     </main>
-    <!-- <?php require_once('template/footer.php') ?> -->
+    <?php require_once('template/footer.php') ?>
 
     <script src="https://kit.fontawesome.com/bedd2811b0.js" crossorigin="anonymous"></script>
 
