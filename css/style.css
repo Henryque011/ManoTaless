@@ -1412,6 +1412,56 @@ div[vw-access-button] {
 }
 
 @media (max-width: 768px) {
+    header .site .menu {
+        display: block;
+    }
+
+    header .site .topo .menu-lateral {
+        width: 200px;
+    }
+
+    header .site nav {
+        display: none;
+    }
+
+    header .site .topo .menu-lateral .menu_reponsivo {
+        display: block !important;
+    }
+
+    header .site .menu-lateral .menu_responsivo ul li a {
+        display: block;
+    }
+
+    header .site .menu-lateral>ul>li {
+        display: none;
+    }
+
+    header .site .menu-lateral>ul>li:nth-child(2) {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    header .site .menu-lateral>ul>li>p {
+        display: none;
+    }
+
+    header .site .menu-lateral ul li .redes_sociais a {
+        font-size: 16pt;
+    }
+
+    header .site .topo .menu-lateral ul li .redes_sociais {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    header .site .topo .menu-lateral button {
+        font-size: 16pt;
+    }
+
+    header .site .topo div:nth-child(1) img {
+        width: 120px;
+    }
+
     header .space {
         padding: 5px;
     }
@@ -1448,6 +1498,48 @@ div[vw-access-button] {
 
     .videos_sobre .site .side .box_video div {
         width: 100%;
+    }
+
+    .upper button {
+        height: auto;
+    }
+
+    .footer .site .side div {
+        text-align: center;
+    }
+
+    .footer .site .side div a img {
+        width: 110px;
+        height: 50px;
+    }
+
+    .footer .side div a {
+        font-size: 9pt;
+        margin: 4px;
+    }
+
+    .footer .site .side div h3 {
+        font-size: 10pt;
+        margin: 2pt;
+    }
+
+    .footer .site .side div .redes_sociais a { 
+        font-size: 14pt;
+    }
+
+    .footer .site .side div {
+        margin: 1px 1px;
+    }
+
+    .footer p {
+        font-size: 14pt;
+    }
+
+    .footer hr {
+        margin: 5px 0px;
+    }
+    .footer p a {
+        font-size: 14pt;
     }
 
     .footer .side div a {
@@ -1663,7 +1755,6 @@ div[vw-access-button] {
     }         
 
     .footer .site .side div {
-        /* align-items: baseline; */
         text-align: center;
     }
 
@@ -1699,5 +1790,27 @@ div[vw-access-button] {
     }
     .footer p a {
         font-size: 14pt;
+    }
+    .modelo .site h2 {
+        font-size: 13pt;
+        margin: 1px 5px;
+        padding: 5px;
+    }
+
+    .modelo .site h3 {
+        font-size: 13pt;
+        margin: 5px 5px;
+        padding: 0px;
+    }
+
+    .modelo .site .side .modelo_carac h2 {
+        font-size: 13pt;
+        /* margin: 1px 5px;
+        padding: 5px; */
+    }
+
+    .modelo .site .side .modelo_carac ul li {
+        font-size: 8pt;
+        padding: 1px 2px;
     }
 }
