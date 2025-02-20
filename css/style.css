@@ -1523,7 +1523,7 @@ div[vw-access-button] {
         margin: 2pt;
     }
 
-    .footer .site .side div .redes_sociais a { 
+    .footer .site .side div .redes_sociais a {
         font-size: 14pt;
     }
 
@@ -1538,6 +1538,7 @@ div[vw-access-button] {
     .footer hr {
         margin: 5px 0px;
     }
+
     .footer p a {
         font-size: 14pt;
     }
@@ -1739,7 +1740,7 @@ div[vw-access-button] {
     }
 
     .videos_sobre .site .side .box_video div {
-        width: 385px !important;   
+        width: 385px !important;
         align-items: center;
         text-align: center;
         display: flex;
@@ -1752,7 +1753,7 @@ div[vw-access-button] {
 
     .upper button {
         margin: 0px;
-    }         
+    }
 
     .footer .site .side div {
         text-align: center;
@@ -1773,7 +1774,7 @@ div[vw-access-button] {
         margin: 2pt;
     }
 
-    .footer .site .side div .redes_sociais a { 
+    .footer .site .side div .redes_sociais a {
         font-size: 14pt;
     }
 
@@ -1788,9 +1789,19 @@ div[vw-access-button] {
     .footer hr {
         margin: 5px 0px;
     }
+
     .footer p a {
         font-size: 14pt;
     }
+
+    .modelo .site .side {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
     .modelo .site h2 {
         font-size: 13pt;
         margin: 1px 5px;
@@ -1805,12 +1816,72 @@ div[vw-access-button] {
 
     .modelo .site .side .modelo_carac h2 {
         font-size: 13pt;
-        /* margin: 1px 5px;
-        padding: 5px; */
     }
 
     .modelo .site .side .modelo_carac ul li {
         font-size: 8pt;
         padding: 1px 2px;
+    }
+
+    .modelo .site .sobre_img img {
+        width: 100%;
+    }
+
+    .cabelos .site h2 {
+        font-size: 13pt;
+        margin: 1px 5px;
+        padding: 5px;
+    }
+
+    .cabelos .site h3 {
+        font-size: 13pt;
+        margin: 5px 5px;
+        padding: 0px;
+    }
+
+    .cabelos .site .box_cabelo .card img {
+        width: 135px;
+        height: 135px;
+    }
+
+    .cabelos .site .box_cabelo .card .card-body .card-text {
+        font-size: 12pt;
+    }
+
+    .cabelos .site h4 {
+        font-size: 13pt;
+        margin: 5px 5px;
+        padding: 0px;
+    }
+
+    .cabelos .site .cabelos_links .side button {
+        width: 180px;
+        height: 40px;
+    }
+
+    .cabelos .site .space {
+        display: none;
+    }
+
+    .estilos_fotos .site h2 {
+        font-size: 13pt;
+        margin: 1px 5px;
+        padding: 5px;
+    }
+
+    .estilos_fotos .site .button_estilos button {
+        width: 180px;
+        height: 40px;
+        margin: 5px;
+    }
+
+    .estilos_fotos .site .box_estilos .imgs_box .imagem_container .box_corte .box_tranca .box_barba .box_dread .box_sobrancelha {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .estilos_fotos .box_estilos .imagemCorte, .estilos_fotos .box_estilos .imagemTranca, .estilos_fotos .box_estilos .imagemBarba, .estilos_fotos .box_estilos .imagemDread, .estilos_fotos .box_estilos .imagemSobrancelha {
+        width: 100px;
+        height: 125px;
     }
 }
