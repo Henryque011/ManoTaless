@@ -1662,27 +1662,28 @@ div[vw-access-button] {
         margin: 0px;
     }         
 
-    .footer .site .side {
-        align-items: center;
+    .footer .site .side div {
+        /* align-items: baseline; */
+        text-align: center;
     }
 
     .footer .site .side div a img {
-        width: 125px;
-        height: 55px;
+        width: 110px;
+        height: 50px;
     }
 
     .footer .side div a {
         font-size: 9pt;
-        margin: 2px;
+        margin: 4px;
     }
 
     .footer .site .side div h3 {
-        font-size: 12pt;
+        font-size: 10pt;
         margin: 2pt;
     }
 
     .footer .site .side div .redes_sociais a { 
-        font-size: 16pt;
+        font-size: 14pt;
     }
 
     .footer .site .side div {
