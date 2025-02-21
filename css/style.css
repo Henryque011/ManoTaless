@@ -1981,7 +1981,6 @@ div[vw-access-button] {
         width: 85%;
     }
 
-
     .carousel_sobre .box_carousel div img {
         width: 220px;
         height: 225px;
@@ -2019,7 +2018,7 @@ div[vw-access-button] {
 
     .footer .side div a {
         font-size: 9pt;
-        margin: 2px;
+        margin: 5px;
     }
 
     .footer p {
@@ -2056,8 +2055,61 @@ div[vw-access-button] {
         width: 75px;
         height: 100px;
     }
-    .estilos_fotos .site .box_estilos .imgs_box ,.imagem_container .texto-hover {
+
+    .estilos_fotos .site .box_estilos .imgs_box .imagem_container .texto-hover {
         font-size: 15pt;
     }
 
+    .estilos_fotos .site h4 {
+        font-size: 13pt;
+        margin: 1px 5px;
+        padding: 5px;
+    }
+
+    .estilos_fotos .site .cabelos_links .side button {
+        width: 200px;
+        height: 35px;
+    }
+
+    .dancarino .banner {
+        height: 100px;
+    }
+
+    .dancarino .site .side {
+        margin: 1px;
+    }
+
+    .dancarino .site .side .sobre_danca {
+        width: 100% !important;
+    }
+
+    .dancarino .site .side .danca_mp4 video {
+        width: 250px !important;
+    }
+
+    .redes .site .redes_sociais {
+        margin: 10px;
+    }
+
+    .redes .site .redes_sociais a {
+        font-size: 20pt;
+    }
+
+    .contato_email .site label {
+        font-size: 12pt;
+    }
+
+    .contato_email .box_contato div .campo_email {
+        width: 70%;
+        height: 50px;
+    }
+
+    .contato_email .site input {
+        font-size: 12pt;
+    }
+
+    .contato_email textarea {
+        height: 150px;
+        font-size: 12pt;
+    }
 }
