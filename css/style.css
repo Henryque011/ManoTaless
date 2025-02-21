@@ -1939,6 +1939,10 @@ div[vw-access-button] {
 
 /* 320px */
 @media (max-width: 460px) {
+    header .site .topo .menu-lateral {
+        width: 150px;
+    }
+
     .presentation .site .side {
         flex-direction: column;
         align-items: center;
@@ -2033,6 +2037,7 @@ div[vw-access-button] {
     .modelo .site .sobre_img {
         width: 100%;
     }
+
     .cabelos .site .box_cabelo .card img {
         width: 80px;
         height: 80px;
@@ -2040,5 +2045,19 @@ div[vw-access-button] {
 
     .cabelos .site .box_cabelo .card .card-body .card-text {
         padding: 5px;
+        font-size: 8pt;
     }
+
+    .estilos_fotos .box_estilos .imagemCorte,
+    .estilos_fotos .box_estilos .imagemTranca,
+    .estilos_fotos .box_estilos .imagemBarba,
+    .estilos_fotos .box_estilos .imagemDread,
+    .estilos_fotos .box_estilos .imagemSobrancelha {
+        width: 75px;
+        height: 100px;
+    }
+    .estilos_fotos .site .box_estilos .imgs_box ,.imagem_container .texto-hover {
+        font-size: 15pt;
+    }
+
 }
