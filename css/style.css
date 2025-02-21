@@ -13,6 +13,10 @@
 * {
     padding: 0;
     margin: 0;
+
+    .destaque {
+        color: #7d1ecc;
+    }
 }
 
 .site {
@@ -386,7 +390,7 @@ body {
         filter: brightness(75%);
         box-shadow: inset 5px 5px 5px 5px black;
         padding: 50px 0;
-        height: 350px;
+        height: 250px;
     }
 
     .site {
@@ -2024,10 +2028,6 @@ div[vw-access-button] {
 
     .videos_sobre .site .side .box_video div {
         width: 300px !important;
-    }
-
-    .videos_sobre .site .side .box_video div video {
-        /* width: 150px !important; */
     }
 
     .upper button {
