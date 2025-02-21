@@ -28,24 +28,11 @@
                     </div>
                 </div>
                 <div class="sobre_txt">
-                    <p>Lorem ipsum dolor sit, amet consectetur <span style="color: #7d1ecc;"> adipisicing
-                        </span> Deserunt, corrupti
-                        repellendus omnis assumenda numquam nemo commodi mollitia ut iste laudantium
-                        voluptates quasi natus ab aut in autem similique! Ut inventore facilis labore
-                        aliquam consequuntur eaque, quia cum laborum harum consequatur odit aut reiciendis
-                        natus repellat recusandae! Tempora ipsam nisi, cupiditate totam eligendi non ad,
-                        quis <span style="color: #7d1ecc;"> voluptatum </span> fugit excepturi voluptas,
-                        ipsa voluptates. Voluptas expedita id ut
-                        sunt facilis porro unde aut incidunt eius. Dolorum neque consequatur impedit
-                        necessitatibus laborum numquam quo blanditiis a omnis at totam vero expedita soluta
-                        corporis adipisci sit aspernatur, rerum delectus ab dolorem placeat nam. Doloremque,
-                        dolorum ratione. Quasi ea, ipsa molestias <span style="color: #7d1ecc;"> aspernatur
-                            voluptatibus </span>
-                        soluta! Eos
-                        temporibus ratione amet ducimus vero, aliquam ad, ipsum aperiam quaerat incidunt ea
-                        cupiditate sit sint iure consectetur ut optio, consequuntur facere. Porro
-                        exercitationem consectetur reprehenderit ipsum. Recusandae veritatis vero aut
-                        itaque?</p>
+                    <p class="perfil">
+                        Tenho <span class="destaque">27 anos</span> e, ao longo de <span class="destaque">12 anos de experiência</span>, venho me aperfeiçoando no universo dos <span class="destaque">cortes de cabelo</span>. Nos últimos <span class="destaque">5 anos</span>, me especializei em <span class="destaque">tranças</span> e, no último ano, mergulhei no mundo dos <span class="destaque">dreads</span>, sempre buscando inovar e oferecer o melhor aos meus clientes.
+                        <br>
+                        Sou formado pela <span class="destaque">Universidade Zumbi dos Palmares</span>. A <span class="destaque">dança</span> sempre fez parte de minha vida desde a infância. Hoje, sou <span class="destaque">dançarino</span> da DJ <span class="destaque">Th4ys</span> e tenho participado de grandes <span class="destaque">eventos</span>. Além disso, também sou <span class="destaque">modelo</span> e <span class="destaque">cantor</span>, explorando diferentes formas de <span class="destaque">expressão artística</span> e sempre me reinventando em cada área.
+                    </p>
                 </div>
             </div>
             <div class="sobre_img">
