@@ -225,6 +225,8 @@ body {
         align-items: center;
         text-align: center;
         height: 400px;
+        display: flex;
+        flex-direction: column;
 
         h2 {
             align-items: center;
@@ -245,7 +247,7 @@ body {
         }
 
         .sobre_txt {
-            width: 90%;
+            width: 50%;
             display: flex;
 
             p {
@@ -255,7 +257,12 @@ body {
                 text-align: center;
                 align-items: center;
                 word-spacing: 2pt;
+                text-indent: 5px;
                 font-family: var(--font_poppins);
+            }
+
+            .destaque {
+                color: #7d1ecc;
             }
         }
     }
@@ -1934,6 +1941,24 @@ div[vw-access-button] {
     .contato_email .site .box_mensagem .btn_contato input {
         width: 150px;
         height: 35px;
+    }
+
+    .contato_email .site label {
+        font-size: 12pt;
+    }
+
+    .contato_email .box_contato div .campo_email {
+        width: 70%;
+        height: 50px;
+    }
+
+    .contato_email .site input {
+        font-size: 12pt;
+    }
+
+    .contato_email textarea {
+        height: 150px;
+        font-size: 12pt;
     }
 }
 
