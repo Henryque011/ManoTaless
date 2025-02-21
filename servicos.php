@@ -32,13 +32,13 @@
     <?php require_once('template/pg_servico/topo_serv.php') ?>
     <main>
         <?php require_once('template/pg_servico/modelo.php') ?>
-        <?php require_once('template/pg_servico/cabelos.php') ?>
-        <?php require_once('template/pg_servico/estilos_fotos.php') ?>
+         <?php require_once('template/pg_servico/cabelos.php') ?>
+       <!-- <?php require_once('template/pg_servico/estilos_fotos.php') ?>
         <?php require_once('template/pg_servico/dancarino.php') ?> 
-        <?php require_once('template/pg_servico/cantor.php') ?> 
+        <?php require_once('template/pg_servico/cantor.php') ?>  -->
     </main>
     <?php require_once('template/upper.php') ?>
-    <?php require_once('template/footer.php') ?>
+    <!-- <?php require_once('template/footer.php') ?> -->
 
     <script src="https://kit.fontawesome.com/bedd2811b0.js" crossorigin="anonymous"></script>
 
