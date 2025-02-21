@@ -6,19 +6,19 @@
             <div class="card" style="width: 18rem;">
                 <img src="img/corte1.png" class="card-img-top" alt="Corte de cabelo">
                 <div class="card-body">
-                    <p class="card-text">cortes a patir de 30 reais</p>
+                    <p class="card-text">cortes a patir de R$30</p>
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
                 <img src="img/sobrancelha1.jpeg" class="card-img-top" alt="sobrancelha">
                 <div class="card-body">
-                    <p class="card-text">sobrancelha a patir de 15 reais</p>
+                    <p class="card-text">sobrancelha a patir de R$15</p>
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
                 <img src="img/dread1.png" class="card-img-top" alt="Dreads">
                 <div class="card-body">
-                    <p class="card-text">dreads a patir de 300 reais</p>
+                    <p class="card-text">dreads a patir de R$R$300</p>
                 </div>
             </div>
         </div>
@@ -26,13 +26,13 @@
             <div class="card" style="width: 18rem;">
                 <img src="img/tranca1.png" class="card-img-top" alt="Tranças">
                 <div class="card-body">
-                    <p class="card-text">tranças a patir de 100 reaiss</p>
+                    <p class="card-text">tranças a patir de R$100</p>
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
                 <img src="img/barba1.jpeg" class="card-img-top" alt="Barbas">
                 <div class="card-body">
-                    <p class="card-text">barba a patir de 15 reais</p>
+                    <p class="card-text">barba a patir de R$15</p>
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
