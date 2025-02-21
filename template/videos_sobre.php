@@ -26,7 +26,7 @@
                     </video>
                 </div>
                 <div><video width="100%" autoplay loop muted style="width: 325px; border-radius: 20px;">
-                        <source src="video/video1.mp4" type="video/mp4">
+                        <source src="video/IMG_5848.MP4" type="video/mp4">
                     </video>
                 </div>
                 <div><video width="100%" autoplay loop muted style="width: 325px; border-radius: 20px;">
