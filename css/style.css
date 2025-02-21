@@ -215,7 +215,7 @@ body {
 
 .side {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     margin: 20px;
     align-items: self-start;
     text-align: center;
@@ -224,7 +224,8 @@ body {
     .sobre {
         align-items: center;
         text-align: center;
-        height: 400px;
+        /* height: 400px; */
+        width: 400px;
         display: flex;
         flex-direction: column;
 
@@ -247,7 +248,7 @@ body {
         }
 
         .sobre_txt {
-            width: 50%;
+            width: 100%;
             display: flex;
 
             p {
@@ -1704,11 +1705,11 @@ div[vw-access-button] {
     .presentation .site .side {
         margin: 2px;
         padding: 0px;
-        height: 300px;
+        height: auto;
     }
 
     .presentation .site .side .sobre {
-        height: 310px;
+        height: auto;
     }
 
     .carousel_sobre .site h2 {
@@ -1978,14 +1979,15 @@ div[vw-access-button] {
     .presentation .site .side .sobre {
         align-items: center;
         text-align: center;
-        height: 280px;
+        height: auto;
+        width: auto;
     }
 
     .presentation .site .side .sobre_txt {
         height: auto;
         align-items: center;
         text-align: center;
-        width: 100%;
+        width: auto;
     }
 
     .presentation .site .side .sobre_txt p {
