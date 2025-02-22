@@ -72,27 +72,34 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $phpmailResposta->Password = PASS_EMAIL;
 
         $phpmailResposta->IsHTML(true);
-        $phpmailResposta->setFrom(USER_EMAIL, "Mano Taless");
+        $phpmailResposta->setFrom(USER_EMAIL, "Sua mensagem foi recebida! - Mano Taless");
         $phpmailResposta->addAddress($email, $nome);
         $phpmailResposta->Subject = "Resposta - " . $assunto;
 
-        $phpmailResposta->msgHTML("$nome <br>
-                                    ------------------------------------------------------------------------------------------------------------------- <br>
-                                    Em breve retornaremos seu contato! <br>
-                                    ------------------------------------------------------------------------------------------------------------------- <br>
-                                    Sua mensagem: $mensagem <br>
-                                    ------------------------------------------------------------------------------------------------------------------- <br>
-                                    Em caso de dúvidas, entre em contato pelo número <br>
-                                    (11)970428582 ");
+        $phpmailResposta->msgHTML(" Olá, $nome <br>
+                                    Recebemos sua mensagem, nossa equipe entrará em contato com você! <br>
+                                    <br>
+                                    Resumo da sua mensagem:  <br>
+                                        Nome: $nome  <br>
+                                        Email: $email  <br>
+                                        Telefone: $telefone  <br>
+                                        Sua mensagem: $mensagem  <br>
+                                    <br>
+                                    Responderemos sua mensagem o mais rápido possível! <br>
+                                    Caso prefira, entre em contato pelo whatsapp (11)970428582
+                                    ");
 
-        $phpmailResposta->AltBody = "$nome \n
-                                        ------------------------------------------------------------------------------------------------------------------- \n
-                                        Em breve retornaremos seu contato! \n
-                                        ------------------------------------------------------------------------------------------------------------------- \n
-                                        Sua mensagem: $mensagem \n
-                                        ------------------------------------------------------------------------------------------------------------------- \n
-                                        Em caso de dúvidas entre em contato pelo número \n
-                                        (11)970428582 ";
+        $phpmailResposta->AltBody = "Olá, $nome \n
+                                    Recebemos sua mensagem, nossa equipe entrará em contato com você! \n
+                                    \n
+                                    Resumo da sua mensagem: \n
+                                        Nome: $nome  \n
+                                        Email: $email  \n
+                                        Telefone: $telefone  \n
+                                        Sua mensagem: $mensagem  \n
+                                    \n
+                                    Responderemos sua mensagem o mais rápido possível! \n
+                                    Caso prefira, entre em contato pelo whatsapp (11)970428582";
 
         if (!$phpmailResposta->send()) {
             throw new Exception("Erro ao enviar email de resposta: " . $phpmailResposta->ErrorInfo);
