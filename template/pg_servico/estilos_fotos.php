@@ -129,7 +129,7 @@
             </span></h4>
         <div class="cabelos_links">
             <div class="side">
-                <button><a href="https://wa.me/5511970428582" target="_blank">whatsapp</a></button>
+                <button><a href="https://w.app/mano_taless" target="_blank">whatsapp</a></button>
             </div>
         </div>
     </article>
