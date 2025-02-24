@@ -13,7 +13,7 @@ Slick.js → Carrosséis de imagens e vídeos dinâmicos
 Arquitetura e Organização:
 O projeto segue uma estrutura leve baseada no padrão MVC (Model-View-Controller), garantindo melhor organização e separação de responsabilidades, ainda que de forma simplificada. Essa abordagem facilita a manutenção, escalabilidade e reuso de código.
 
-Funcionalidades Principais
+Funcionalidades Principais:
  Galeria de Fotos e Vídeos Dinâmica → Exibição do portfólio utilizando Slick.js para uma experiência mais fluida
  Links para Redes Sociais → Direcionamento para contato e interação com o público
  Formulário de Contato com PHPMailer → Envio de mensagens seguro e otimizado diretamente para o e-mail do cliente
