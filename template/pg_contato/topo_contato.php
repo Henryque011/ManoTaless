@@ -33,12 +33,12 @@
                             <a href="https://w.app/mano_taless" target="_blank"><i class="fa-brands fa-whatsapp" title="WHATSAPP"></i></a>
                             <a href="https://www.tiktok.com/@mano.taless?lang=en" target="_blank" title="TIKTOK"><i
                                     class=" fa-brands fa-tiktok"></i></a>
-                            <a href="#"><i class="fa-brands fa-spotify" title="SPOTIFY"></i></a>
+                            <!-- <a href="#"><i class="fa-brands fa-spotify" title="SPOTIFY"></i></a> -->
                         </div>
                     </li>
                     <li>
                         <p style="display: flex; justify-content: space-between;">
-                            telefone: <a href="https://wa.me/5511970428582">(11)970428582<i
+                            telefone: <a href="https://w.app/mano_taless">(11)970428582<i
                                     class="fa-solid fa-phone"></i></a>
                         </p>
                     </li>
