@@ -48,7 +48,7 @@
         <div class="cabelos_links">
             <div class="side">
                 <a href="https://w.app/mano_taless" target="_blank"><i class="fa-brands fa-whatsapp" title="WHATSAPP"></i></a>
-                <button><a href="contato.html">redes sociais</a></button>
+                <button><a href="contato.php">redes sociais</a></button>
             </div>
         </div>
         <div class="space"></div>
