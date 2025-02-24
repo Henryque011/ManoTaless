@@ -7,7 +7,7 @@
             <a href="https://w.app/mano_taless" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
             <a href="https://www.tiktok.com/@mano.taless?lang=en" target="_blank"><i
                     class="fa-brands fa-tiktok"></i></a>
-            <a href="#"><i class="fa-brands fa-spotify"></i></a>
+            <!-- <a href="#"><i class="fa-brands fa-spotify"></i></a> -->
         </div>
     </article>
 </section>
