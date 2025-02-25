@@ -466,11 +466,11 @@ body {
             }
 
             .box_video {
+                position: relative;
+
                 .slick-initialized.slick-slider.slick-dotted {
                     width: 450px;
                 }
-
-                position: relative;
 
                 div {
                     width: 400px;
@@ -482,6 +482,15 @@ body {
                         width: 100%;
                         align-items: center;
                         text-align: center;
+                    }
+
+                    .toggleSound {
+                        position: absolute;
+                        top: 10px;
+                        right: 10px;
+                        color: #fff;
+                        font-size: 20px;
+                        cursor: pointer;
                     }
                 }
 
