@@ -51,6 +51,15 @@ $(document).ready(function () {
     $slider.find('video').on('ended', function () {
         $slider.slick('slickNext');
     });
+
+    // Alteração do som ao clicar no ícone
+    $('.toggleSound').click(function () {
+        var video = $(this).siblings('video').get(0);
+        if (video) {
+            video.muted = !video.muted;
+            $(this).toggleClass('fa-volume-off fa-volume-high');
+        }
+    });
 });
 
 
