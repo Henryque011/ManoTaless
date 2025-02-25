@@ -77,7 +77,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $phpmailResposta->Subject = "Resposta - " . $assunto;
 
         $phpmailResposta->msgHTML(" Olá, $nome <br>
-                                    Recebemos sua mensagem, nossa equipe entrará em contato com você! <br>
+                                    Recebemos sua mensagem, entraremos em contato com você! <br>
                                     <br>
                                     Resumo da sua mensagem:  <br>
                                         Nome: $nome  <br>
@@ -90,7 +90,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                                     ");
 
         $phpmailResposta->AltBody = "Olá, $nome \n
-                                    Recebemos sua mensagem, nossa equipe entrará em contato com você! \n
+                                    Recebemos sua mensagem, entraremos em contato com você! \n
                                     \n
                                     Resumo da sua mensagem: \n
                                         Nome: $nome  \n
