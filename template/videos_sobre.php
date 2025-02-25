@@ -21,25 +21,35 @@
                 <button><a href="contato.html">entre em contato</a></button>
             </div>
             <div class="box_video">
-                <div><video width="100%" autoplay muted style="width: 325px; border-radius: 20px;">
+                <div>
+                    <video width="100%" autoplay muted class="video-player" style="width: 325px; border-radius: 20px;">
                         <source src="video/video1.mp4" type="video/mp4">
                     </video>
+                    <i class="fa-solid fa-volume-off toggleSound"></i>
                 </div>
-                <div><video width="100%" autoplay loop muted style="width: 325px; border-radius: 20px;">
+                <div>
+                    <video width="100%" autoplay loop muted class="video-player" style="width: 325px; border-radius: 20px;">
                         <source src="video/IMG_5848.MP4" type="video/mp4">
                     </video>
+                    <i class="fa-solid fa-volume-off toggleSound"></i>
                 </div>
-                <div><video width="100%" autoplay loop muted style="width: 325px; border-radius: 20px;">
+                <div>
+                    <video width="100%" autoplay loop muted class="video-player" style="width: 325px; border-radius: 20px;">
                         <source src="video/video1.mp4" type="video/mp4">
                     </video>
+                    <i class="fa-solid fa-volume-off toggleSound"></i>
                 </div>
-                <div><video width="100%" autoplay loop muted style="width: 325px; border-radius: 20px;">
+                <div>
+                    <video width="100%" autoplay loop muted class="video-player" style="width: 325px; border-radius: 20px;">
                         <source src="video/video1.mp4" type="video/mp4">
                     </video>
+                    <i class="fa-solid fa-volume-off toggleSound"></i>
                 </div>
-                <div><video width="100%" autoplay loop muted style="width: 325px; border-radius: 20px;">
+                <div>
+                    <video width="100%" autoplay loop muted class="video-player" style="width: 325px; border-radius: 20px;">
                         <source src="video/video1.mp4" type="video/mp4">
                     </video>
+                    <i class="fa-solid fa-volume-off toggleSound"></i>
                 </div>
             </div>
         </div>
